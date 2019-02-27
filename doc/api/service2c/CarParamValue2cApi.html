@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarParamValueListShowByCarStyleID">没注释方法</a></li>
+            <li><a href="#findCarParamValueListByCarStyleID">没注释方法</a></li>
+            <li><a href="#getCarParamValueByEnameStyleId"> 通过ename及车型id获取参数值列表</a></li>
+            <li><a href="#getBaseCarParamValueByStyleIdsForLookCar">获取车型基本展示参数配置(看车)</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarParamValueVo&gt;&gt; findCarParamValueListShowByCarStyleID(Integer carStyleID, String sessionid);
+        </pre>
+
+        <h4 id="CarParamValueVo">出参 CarParamValueVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项ID</td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>paramValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数值</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数枚举ID</td>
+                </tr>
+                <tr>
+                    <td>isCustomizable</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否可定制</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 名称</td>
+                </tr>
+                <tr>
+                    <td>paramEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>paramUnit</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 单位</td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数描述</td>
+                </tr>
+                <tr>
+                    <td>dataType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数类型</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>isMultiValue</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>dataSource</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>componentType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarParamValueVo&gt;&gt; findCarParamValueListByCarStyleID(Integer carStyleID, String sessionid);
+        </pre>
+
+        <h4 id="CarParamValueVo">出参 CarParamValueVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项ID</td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>paramValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数值</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数枚举ID</td>
+                </tr>
+                <tr>
+                    <td>isCustomizable</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否可定制</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 名称</td>
+                </tr>
+                <tr>
+                    <td>paramEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>paramUnit</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 单位</td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数描述</td>
+                </tr>
+                <tr>
+                    <td>dataType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数类型</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>isMultiValue</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>dataSource</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>componentType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Map&lt;String, CarParamValue&gt;&gt; getCarParamValueByEnameStyleId(List&lt;String&gt; enames, Integer styleId, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Map&lt;Integer, List&lt;CarParamValueVoForLookCar&gt;&gt;&gt; getBaseCarParamValueByStyleIdsForLookCar(List&lt;Integer&gt; styleIds, String sessionId);
+        </pre>
+
+        <h4 id="CarParamValueVoForLookCar">出参 CarParamValueVoForLookCar</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数id</td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数名称</td>
+                </tr>
+                <tr>
+                    <td>paraValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数值</td>
+                </tr>
+                <tr>
+                    <td>paramEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数英文名</td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型id</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

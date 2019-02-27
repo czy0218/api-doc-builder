@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarImage"> 添加车型图片</a></li>
+            <li><a href="#updateCarImageById"> 更新图片信息</a></li>
+            <li><a href="#getCarImageById"> 获取图片信息</a></li>
+            <li><a href="#findCarImageWithPropertyVoPageListByPackageId">根据图集Id分页获取所有图片</a></li>
+            <li><a href="#addCarImageList">批量添加图片</a></li>
+            <li><a href="#delCarImageById">根据主键删除图片（逻辑删除）</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarImage&gt; addCarImage(CarImage carImage, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarImage&gt; updateCarImageById(CarImage carImage, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarImage&gt; getCarImageById(long id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarImageWithPropertyVo&gt;&gt; findCarImageWithPropertyVoPageListByPackageId(int packageId, Pagination pagination, String sessionid);
+        </pre>
+
+        <h4 id="CarImageWithPropertyVo">出参 CarImageWithPropertyVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图集ID</td>
+                </tr>
+                <tr>
+                    <td>propertyId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性ID</td>
+                </tr>
+                <tr>
+                    <td>imageName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片名称</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片url 带占位符</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>propertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性名称</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Integer&gt; addCarImageList(List&lt;CarImage&gt; carImageList, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarImageById(int id, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

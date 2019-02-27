@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarColorStyleRelaById">主键获取外观颜色关系</a></li>
+            <li><a href="#addCarColorStyleRela">添加车系颜色关系</a></li>
+            <li><a href="#updateCarColorStyleRela">更新外观颜色车型关系</a></li>
+            <li><a href="#saveCarColorStyleRelaBatch">批量保存车型外观颜色关系</a></li>
+            <li><a href="#deleteCarColorStyleRelaById">删除外观颜色车型关系</a></li>
+            <li><a href="#findCarColorStyleRelaPageList">查询条件，条件分页查询车系_年款_车型外观颜色信息</a></li>
+            <li><a href="#findCarColorStyleRelaList">条件查询车系 年款 外观颜色信息</a></li>
+            <li><a href="#findCarColorStyleRelaYearList">获取车系外观颜色支持的年款集合</a></li>
+            <li><a href="#delSerialYearColorStyleRela">删除车系年款下外观颜色关系</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarColorStyleRela&gt; getCarColorStyleRelaById(Long id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Integer&gt; addCarColorStyleRela(CarColorStyleRela carColorStyleRela, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarColorStyleRela(CarColorStyleRela carColorStyleRela, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; saveCarColorStyleRelaBatch(List&lt;CarColorStyleRela&gt; carColorStyleRelaList, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; deleteCarColorStyleRelaById(Long id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarColorStyleRelaVo&gt;&gt; findCarColorStyleRelaPageList(CarColorStyleRelaQueryParameter searchParam, Pagination pagination, String sessionid);
+        </pre>
+                <h4 id="CarColorStyleRelaQueryParameter">入参 CarColorStyleRelaQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>styleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>year</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarColorStyleRelaVo">出参 CarColorStyleRelaVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>serialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>colorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色库ID</td>
+                </tr>
+                <tr>
+                    <td>colorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色名称</td>
+                </tr>
+                <tr>
+                    <td>colorImgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>colorValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色值(#FFFFFF)</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>isDefault</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否默认</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarColorStyleRelaVo&gt;&gt; findCarColorStyleRelaList(CarColorStyleRelaQueryParameter searchParam, String sessionid);
+        </pre>
+                <h4 id="CarColorStyleRelaQueryParameter">入参 CarColorStyleRelaQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>styleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>year</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarColorStyleRelaVo">出参 CarColorStyleRelaVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>serialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>colorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色库ID</td>
+                </tr>
+                <tr>
+                    <td>colorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色名称</td>
+                </tr>
+                <tr>
+                    <td>colorImgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>colorValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色值(#FFFFFF)</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>isDefault</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否默认</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;Integer&gt;&gt; findCarColorStyleRelaYearList(Integer serialId, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delSerialYearColorStyleRela(Integer serialId, Integer year, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

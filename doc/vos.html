@@ -1,0 +1,3556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+        <li><a href="#CarBrandVo">CarBrandVo</a></li>
+        <li><a href="#CarColorInteriorStyleRelaVo">CarColorInteriorStyleRelaVo</a></li>
+        <li><a href="#CarColorInteriorVo">CarColorInteriorVo</a></li>
+        <li><a href="#CarColorSerialYearVo">CarColorSerialYearVo</a></li>
+        <li><a href="#CarColorStyleConfigVo">CarColorStyleConfigVo</a></li>
+        <li><a href="#CarColorStyleRelaVo">CarColorStyleRelaVo</a></li>
+        <li><a href="#CarColorVo">CarColorVo</a></li>
+        <li><a href="#CarCountryVo">CarCountryVo</a></li>
+        <li><a href="#CarHighlightsImgPackageVo">CarHighlightsImgPackageVo</a></li>
+        <li><a href="#CarHighlightsImgVo">CarHighlightsImgVo</a></li>
+        <li><a href="#CarImageGroupVo">CarImageGroupVo</a></li>
+        <li><a href="#CarImagePackageSearchVo">CarImagePackageSearchVo</a></li>
+        <li><a href="#CarImagePackageVo">CarImagePackageVo</a></li>
+        <li><a href="#CarImagePackageWrapper">CarImagePackageWrapper</a></li>
+        <li><a href="#CarImagePropertyVo">CarImagePropertyVo</a></li>
+        <li><a href="#CarImageVo">CarImageVo</a></li>
+        <li><a href="#CarImageWhitecoverVo">CarImageWhitecoverVo</a></li>
+        <li><a href="#CarImageWithPropertyVo">CarImageWithPropertyVo</a></li>
+        <li><a href="#CarLevelVo">CarLevelVo</a></li>
+        <li><a href="#CarMaintenanceManualInfoVo">CarMaintenanceManualInfoVo</a></li>
+        <li><a href="#CarMaintenanceManualVo">CarMaintenanceManualVo</a></li>
+        <li><a href="#CarParamCustomConfigVo">CarParamCustomConfigVo</a></li>
+        <li><a href="#CarParamIntermediateVo">CarParamIntermediateVo</a></li>
+        <li><a href="#CarParamIntermediateVo2C">CarParamIntermediateVo2C</a></li>
+        <li><a href="#CarParamItemValueVo">CarParamItemValueVo</a></li>
+        <li><a href="#CarParamItemVo">CarParamItemVo</a></li>
+        <li><a href="#CarParamSerialConfigVo">CarParamSerialConfigVo</a></li>
+        <li><a href="#CarParamValueGroupVo">CarParamValueGroupVo</a></li>
+        <li><a href="#CarParamValueVo">CarParamValueVo</a></li>
+        <li><a href="#CarParamValueVoForLookCar">CarParamValueVoForLookCar</a></li>
+        <li><a href="#CarParamVo">CarParamVo</a></li>
+        <li><a href="#CarProducerVo">CarProducerVo</a></li>
+        <li><a href="#CarRelationVo">CarRelationVo</a></li>
+        <li><a href="#CarSerialVo">CarSerialVo</a></li>
+        <li><a href="#CarStyleCanCustomItem">CarStyleCanCustomItem</a></li>
+        <li><a href="#CarStyleVo">CarStyleVo</a></li>
+        <li><a href="#CarVideoPackageVo">CarVideoPackageVo</a></li>
+        <li><a href="#CarVideoPlayRecordStatisticsVo">CarVideoPlayRecordStatisticsVo</a></li>
+        <li><a href="#CarVideoPlayRecordVo">CarVideoPlayRecordVo</a></li>
+        <li><a href="#CarVideoTypeVo">CarVideoTypeVo</a></li>
+        <li><a href="#CarVideoVo">CarVideoVo</a></li>
+</ul>
+
+    <h4 id="CarBrandVo">CarBrandVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>producerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 厂商ID</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名称</td>
+            </tr>
+            <tr>
+                <td>showName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 显示名称</td>
+            </tr>
+            <tr>
+                <td>ename</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>allSpell</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 全拼</td>
+            </tr>
+            <tr>
+                <td>countryId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 国家ID</td>
+            </tr>
+            <tr>
+                <td>introduction</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 简介</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>logo</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌logo</td>
+            </tr>
+            <tr>
+                <td>producerName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorInteriorStyleRelaVo">CarColorInteriorStyleRelaVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>interiorColorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色库ID</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否默认</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>colorNameA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称_A</td>
+            </tr>
+            <tr>
+                <td>colorValueA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值_A(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>colorImgA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色A图片</td>
+            </tr>
+            <tr>
+                <td>colorNameB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称_B</td>
+            </tr>
+            <tr>
+                <td>colorValueB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值_B(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>colorImgB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色B图片</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorInteriorVo">CarColorInteriorVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>colorNameA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称_A</td>
+            </tr>
+            <tr>
+                <td>colorValueA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值_A(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>colorImgA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色A图片</td>
+            </tr>
+            <tr>
+                <td>colorNameB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称_B</td>
+            </tr>
+            <tr>
+                <td>colorValueB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值_B(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>colorImgB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色B图片</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorSerialYearVo">CarColorSerialYearVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 颜色ID</td>
+            </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>colorValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorStyleConfigVo">CarColorStyleConfigVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>colorSerialYearId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色年款ID</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否默认</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>colorValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值</td>
+            </tr>
+            <tr>
+                <td>colorImgUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 色块图</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorStyleRelaVo">CarColorStyleRelaVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色库ID</td>
+            </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>colorImgUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>colorValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否默认</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorVo">CarColorVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>colorValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色值(#FFFFFF)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>colorImgUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 色块图片</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarCountryVo">CarCountryVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>countryName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 国家名称</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarHighlightsImgPackageVo">CarHighlightsImgPackageVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 亮点图集名称</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建人</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>coverImage</td>
+                <td>CarHighlightsImgVo</td>
+                <td></td>
+                <td></td>
+                <td> 封面图片</td>
+            </tr>
+            <tr>
+                <td>imgNum</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图片数量</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarHighlightsImgVo">CarHighlightsImgVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图集ID</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片路径</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者ID</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImageGroupVo">CarImageGroupVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>groupName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 分组名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>filterKey</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 分组唯一标识不能重复</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePackageSearchVo">CarImagePackageSearchVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图集名称</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图库分组ID</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款ID</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>count</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图集图片总数</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+            <tr>
+                <td>colorValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色值</td>
+            </tr>
+            <tr>
+                <td>interiorColor</td>
+                <td>long</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色ID</td>
+            </tr>
+            <tr>
+                <td>interiorColorValueList</td>
+                <td>List&lt;String&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色值</td>
+            </tr>
+            <tr>
+                <td>colorValueA</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>colorValueB</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>defaultImage</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图集默认图片</td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 权重</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePackageVo">CarImagePackageVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图集名称</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图库分组ID</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款ID</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+            <tr>
+                <td>interiorColor</td>
+                <td>long</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色ID</td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 权重</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePackageWrapper">CarImagePackageWrapper</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>carImagePackage</td>
+                <td>CarImagePackage</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carImageGroup</td>
+                <td>CarImageGroup</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePropertyVo">CarImagePropertyVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>propertyName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 属性名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分组ID</td>
+            </tr>
+            <tr>
+                <td>groupName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>parentPropertyId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 父属性ID</td>
+            </tr>
+            <tr>
+                <td>parentPropertyName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImageVo">CarImageVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图集ID</td>
+            </tr>
+            <tr>
+                <td>propertyId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 属性ID</td>
+            </tr>
+            <tr>
+                <td>imageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片名称</td>
+            </tr>
+            <tr>
+                <td>imageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片url 带占位符</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>int</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片集名称</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+            <tr>
+                <td>interiorColor</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色ID</td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 权重</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分组ID</td>
+            </tr>
+            <tr>
+                <td>groupName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 分组名称</td>
+            </tr>
+            <tr>
+                <td>propertyName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 属性名称</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImageWhitecoverVo">CarImageWhitecoverVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>imageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片地址</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>colorSerialYearId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImageWithPropertyVo">CarImageWithPropertyVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图集ID</td>
+            </tr>
+            <tr>
+                <td>propertyId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 属性ID</td>
+            </tr>
+            <tr>
+                <td>imageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片名称</td>
+            </tr>
+            <tr>
+                <td>imageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片url 带占位符</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>propertyName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 属性名称</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarLevelVo">CarLevelVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 级别名称</td>
+            </tr>
+            <tr>
+                <td>imgUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图片</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarMaintenanceManualInfoVo">CarMaintenanceManualInfoVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>maintenanceManualId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 手册id</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系id</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>engineCapacity</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 排量</td>
+            </tr>
+            <tr>
+                <td>gearType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 变速箱类型</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarMaintenanceManualVo">CarMaintenanceManualVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>imgUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 手册图片</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建日期</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新日期</td>
+            </tr>
+            <tr>
+                <td>carMaintenanceManualInfoVoList</td>
+                <td>List&lt;CarMaintenanceManualInfoVo&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系保养关联信息</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamCustomConfigVo">CarParamCustomConfigVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>itemValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数枚举ID</td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 定制项价格</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carParamItemId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>descr</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>itemValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamIntermediateVo">CarParamIntermediateVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>paramValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型参数ID</td>
+            </tr>
+            <tr>
+                <td>paramValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车型参数值</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项ID</td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数项名称</td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 父参数项ID</td>
+            </tr>
+            <tr>
+                <td>parentParamName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 父参数项名称</td>
+            </tr>
+            <tr>
+                <td>itemValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项枚举ID</td>
+            </tr>
+            <tr>
+                <td>isCustomizable</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否可定制</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>remark</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 备注</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamIntermediateVo2C">CarParamIntermediateVo2C</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>StyleName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车型名称</td>
+            </tr>
+            <tr>
+                <td>minReferPrice</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 最低指导价</td>
+            </tr>
+            <tr>
+                <td>countryReferPrice</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 全国最低参考价</td>
+            </tr>
+            <tr>
+                <td>subsidy</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 补助</td>
+            </tr>
+            <tr>
+                <td>producerName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 厂商</td>
+            </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 级别</td>
+            </tr>
+            <tr>
+                <td>carParamIntermediateVoList</td>
+                <td>List&lt;CarParamIntermediateVo&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车型参数列表</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamItemValueVo">CarParamItemValueVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>itemId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项ID</td>
+            </tr>
+            <tr>
+                <td>itemValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数项值</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 定制项图片</td>
+            </tr>
+            <tr>
+                <td>descr</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 描述</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamItemVo">CarParamItemVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 父参数ID</td>
+            </tr>
+            <tr>
+                <td>parentParamName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 父参数名称</td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 名称</td>
+            </tr>
+            <tr>
+                <td>paramEname</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>paramUnit</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 单位</td>
+            </tr>
+            <tr>
+                <td>descr</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数描述</td>
+            </tr>
+            <tr>
+                <td>dataType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数类型</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>remark</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 备注</td>
+            </tr>
+            <tr>
+                <td>isMultiValue</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dataSource</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>componentType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+            </tr>
+            <tr>
+                <td>componentTypeEnumValues</td>
+                <td>List&lt;String&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 控件类型枚举值（RadioBox、CheckBox、Select）</td>
+            </tr>
+            <tr>
+                <td>carParamItemValueList</td>
+                <td>List&lt;CarParamItemValue&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 参数对应枚举列表</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamSerialConfigVo">CarParamSerialConfigVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 父参数项ID</td>
+            </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项ID</td>
+            </tr>
+            <tr>
+                <td>showSort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 显示顺序</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamValueGroupVo">CarParamValueGroupVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carParamValueList</td>
+                <td>List&lt;CarParamValueVo&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 分组参数项 参数值集合</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamValueVo">CarParamValueVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项ID</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>paramValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数值</td>
+            </tr>
+            <tr>
+                <td>itemValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数枚举ID</td>
+            </tr>
+            <tr>
+                <td>isCustomizable</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否可定制</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 父参数ID</td>
+            </tr>
+            <tr>
+                <td>parentParamName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 名称</td>
+            </tr>
+            <tr>
+                <td>paramEname</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>paramUnit</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 单位</td>
+            </tr>
+            <tr>
+                <td>descr</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数描述</td>
+            </tr>
+            <tr>
+                <td>dataType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数类型</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>remark</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 备注</td>
+            </tr>
+            <tr>
+                <td>isMultiValue</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dataSource</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>componentType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamValueVoForLookCar">CarParamValueVoForLookCar</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td> 参数id</td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数名称</td>
+            </tr>
+            <tr>
+                <td>paraValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数值</td>
+            </tr>
+            <tr>
+                <td>paramEname</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 参数英文名</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型id</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamVo">CarParamVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>carParamItem</td>
+                <td>CarParamItem</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carParamItemValue</td>
+                <td>List&lt;CarParamItemValue&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarProducerVo">CarProducerVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>producerName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 厂商名称</td>
+            </tr>
+            <tr>
+                <td>logo</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> Logo</td>
+            </tr>
+            <tr>
+                <td>ename</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>allSpell</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 全拼</td>
+            </tr>
+            <tr>
+                <td>countryId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 国家ID</td>
+            </tr>
+            <tr>
+                <td>introduction</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 简介</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarRelationVo">CarRelationVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>producerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 厂商ID</td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarSerialVo">CarSerialVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名</td>
+            </tr>
+            <tr>
+                <td>brandShowName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌显示名</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>serialEname</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>showName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 显示名称</td>
+            </tr>
+            <tr>
+                <td>allSpell</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 全拼</td>
+            </tr>
+            <tr>
+                <td>levelId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 级别名称</td>
+            </tr>
+            <tr>
+                <td>whitePic</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 白底图</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>serialDescr</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系描述</td>
+            </tr>
+            <tr>
+                <td>referPrice</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 最低指导价</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>saleStatus</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 销售状态(1.在销2.停销3.待销)</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarStyleCanCustomItem">CarStyleCanCustomItem</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>carParamValueVo</td>
+                <td>CarParamValueVo</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carParamItemValueList</td>
+                <td>List&lt;CarParamItemValue&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarStyleVo">CarStyleVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>styleName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车型名称</td>
+            </tr>
+            <tr>
+                <td>referPrice</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 指导价</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>engineCapacity</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 排量</td>
+            </tr>
+            <tr>
+                <td>gearType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 变速箱类型</td>
+            </tr>
+            <tr>
+                <td>addPressType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 增压方式</td>
+            </tr>
+            <tr>
+                <td>power</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 功率</td>
+            </tr>
+            <tr>
+                <td>saleStatus</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 销售状态(1.在销2.停销3.待销)</td>
+            </tr>
+            <tr>
+                <td>produceStatus</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>serialShowName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系显示名称</td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名称</td>
+            </tr>
+            <tr>
+                <td>producerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 厂商ID</td>
+            </tr>
+            <tr>
+                <td>producerName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 厂商名称</td>
+            </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>levelId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系级别ID</td>
+            </tr>
+            <tr>
+                <td>whitePic</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 白底图</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPackageVo">CarVideoPackageVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频集名称</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分类</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+            <tr>
+                <td>CoverVideo</td>
+                <td>CarVideoVo</td>
+                <td></td>
+                <td></td>
+                <td> 封面视频</td>
+            </tr>
+            <tr>
+                <td>videoNum</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频数量</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPlayRecordStatisticsVo">CarVideoPlayRecordStatisticsVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>videoId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称</td>
+            </tr>
+            <tr>
+                <td>pv</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> pv</td>
+            </tr>
+            <tr>
+                <td>uv</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> uv</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPlayRecordVo">CarVideoPlayRecordVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>typeId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称</td>
+            </tr>
+            <tr>
+                <td>videoId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称</td>
+            </tr>
+            <tr>
+                <td>videoUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频url</td>
+            </tr>
+            <tr>
+                <td>userId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 观看用户ID</td>
+            </tr>
+            <tr>
+                <td>videoImageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频图片url</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoTypeVo">CarVideoTypeVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>typeCode</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型编码</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoVo">CarVideoVo</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID</td>
+            </tr>
+            <tr>
+                <td>typeId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称</td>
+            </tr>
+            <tr>
+                <td>videoUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频url</td>
+            </tr>
+            <tr>
+                <td>videoImageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频图片url</td>
+            </tr>
+            <tr>
+                <td>duration</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 时长（秒）</td>
+            </tr>
+            <tr>
+                <td>size</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 大小（kb）</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>source</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 来源</td>
+            </tr>
+            <tr>
+                <td>author</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频作者</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+</body>
+
+</html>

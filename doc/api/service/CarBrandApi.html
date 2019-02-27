@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarBrand">添加品牌信息</a></li>
+            <li><a href="#getCarBrandById">主键获取品牌信息</a></li>
+            <li><a href="#getCarBrandWithProducerById">品牌主键获取品牌附带厂商信息</a></li>
+            <li><a href="#getCarBrandByBrandName">根据品牌名获取品牌相关信息</a></li>
+            <li><a href="#getCarBrandPageListByProducerId">没注释方法</a></li>
+            <li><a href="#getCarBrandPageList">搜索品牌分页获取品牌列表</a></li>
+            <li><a href="#modifyCarBrand">没注释方法</a></li>
+            <li><a href="#freezeCarBrandById">没注释方法</a></li>
+            <li><a href="#activateCarBrandById">重新激活品牌</a></li>
+            <li><a href="#getCarBrandsByIds">根据ID列表获取获取品牌列表</a></li>
+            <li><a href="#findCarBrandPageList"> 分页查询</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarBrand&gt; addCarBrand(CarBrand carBrand, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarBrand&gt; getCarBrandById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarBrandVo&gt; getCarBrandWithProducerById(Integer id, String sessionid);
+        </pre>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarBrand&gt; getCarBrandByBrandName(String brandName, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarBrandVo&gt;&gt; getCarBrandPageListByProducerId(Integer producerId, Pagination pagination, String sessionid);
+        </pre>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarBrandVo&gt;&gt; getCarBrandPageList(CarBrand parameter, Pagination pagination, String sessionid);
+        </pre>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarBrand&gt; modifyCarBrand(CarBrand carBrand, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; freezeCarBrandById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; activateCarBrandById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarBrandVo&gt;&gt; getCarBrandsByIds(List&lt;Integer&gt; ids, String sessionid);
+        </pre>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarBrandVo&gt;&gt; findCarBrandPageList(CarBrandQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarBrandQueryParameter">入参 CarBrandQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>品牌ID</td>
+                            </tr>
+                            <tr>
+                                <td>idList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>品牌ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>producerId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>厂商ID</td>
+                            </tr>
+                            <tr>
+                                <td>producerIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>厂商ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>brandName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>品牌名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>brandNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>品牌名称 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>brandNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>品牌名称 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>showName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>显示名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>showNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>显示名称 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>showNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>显示名称 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>ename</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>英文名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>enameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>英文名称 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>enameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>英文名称 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>allSpell</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>全拼 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>allSpellStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>全拼 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>allSpellLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>全拼 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>countryId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>国家ID</td>
+                            </tr>
+                            <tr>
+                                <td>countryIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>国家ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>是否有效</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>开始创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>结束创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>开始修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>结束修改时间</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

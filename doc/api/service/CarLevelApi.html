@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getAllCarLevel">获取所有车系级别</a></li>
+            <li><a href="#findCarLevelPageList">分页查询车系级别</a></li>
+            <li><a href="#findCarLevelList">条件查询车系级别</a></li>
+            <li><a href="#getCarLevelById">根据车型级别ID获取车系级别</a></li>
+            <li><a href="#addCarLevel">添加车系级别</a></li>
+            <li><a href="#updateCarLevel">修改车系级别</a></li>
+            <li><a href="#deleteCarLevelById">根据id删除车系级别</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarLevel&gt;&gt; getAllCarLevel(String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarLevelVo&gt;&gt; findCarLevelPageList(CarLevelQueryParameter params, Pagination pagination, String sessionid);
+        </pre>
+                <h4 id="CarLevelQueryParameter">入参 CarLevelQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>levelName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 级别名称</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarLevelVo">出参 CarLevelVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别名称</td>
+                </tr>
+                <tr>
+                    <td>imgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarLevelVo&gt;&gt; findCarLevelList(CarLevelQueryParameter params, String sessionid);
+        </pre>
+                <h4 id="CarLevelQueryParameter">入参 CarLevelQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>levelName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 级别名称</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarLevelVo">出参 CarLevelVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别名称</td>
+                </tr>
+                <tr>
+                    <td>imgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarLevel&gt; getCarLevelById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Integer&gt; addCarLevel(CarLevel carLevel, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarLevel(CarLevel carLevel, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; deleteCarLevelById(Integer id, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

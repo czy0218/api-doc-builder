@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarBrandListByProducerId"> 根据厂商ID获取所有品牌列表</a></li>
+            <li><a href="#getCarBrandsByIds">根据ID列表获取获取品牌列表</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarBrand&gt;&gt; getCarBrandListByProducerId(Integer producerId, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarBrandVo&gt;&gt; getCarBrandsByIds(List&lt;Integer&gt; ids, String sessionid);
+        </pre>
+
+        <h4 id="CarBrandVo">出参 CarBrandVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>producerId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>ename</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>countryId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 国家ID</td>
+                </tr>
+                <tr>
+                    <td>introduction</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 简介</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌logo</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

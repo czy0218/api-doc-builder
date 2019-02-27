@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarParamSerialConfig">添加车系参数项关系</a></li>
+            <li><a href="#updateCarParamSerialConfig">修改车系参数配置项</a></li>
+            <li><a href="#delCarParamSerialConfigById">根据主键删除车系参数配置项</a></li>
+            <li><a href="#deleteCarParamSerialConfigBySerialId">根据车系ID删除车系参数项关系</a></li>
+            <li><a href="#addCarParamSerialConfigBatch">批量添加车系参数项关联</a></li>
+            <li><a href="#updateCarParamSerialConfigBatch">批量更新车系参数项关联</a></li>
+            <li><a href="#findCarParamSerialConfigList">条件查询车系参数项关系</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Integer&gt; addCarParamSerialConfig(CarParamSerialConfig carParamSerialConfig, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarParamSerialConfig(CarParamSerialConfig carParamSerialConfig, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarParamSerialConfigById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; deleteCarParamSerialConfigBySerialId(Integer serialId, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; addCarParamSerialConfigBatch(List&lt;CarParamSerialConfig&gt; configs, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarParamSerialConfigBatch(List&lt;CarParamSerialConfig&gt; configs, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarParamSerialConfigVo&gt;&gt; findCarParamSerialConfigList(CarParamSerialConfigQueryParameter queryParameter, String sessionid);
+        </pre>
+                <h4 id="CarParamSerialConfigQueryParameter">入参 CarParamSerialConfigQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>configId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>brandId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamSerialConfigVo">出参 CarParamSerialConfigVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>brandId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌ID</td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数项ID</td>
+                </tr>
+                <tr>
+                    <td>paramId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项ID</td>
+                </tr>
+                <tr>
+                    <td>showSort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示顺序</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

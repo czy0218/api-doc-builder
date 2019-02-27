@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarParamCustomConfig">没注释方法</a></li>
+            <li><a href="#addUpdateDelBash">批量添加更新删除接口 id为空 新增 id不为空 更新 delIds删除</a></li>
+            <li><a href="#delCarParamCustomConfigById">没注释方法</a></li>
+            <li><a href="#getCarParamCustomConfigById">没注释方法</a></li>
+            <li><a href="#updateCarParamCustomConfig">没注释方法</a></li>
+            <li><a href="#getCarParamCustomConfigListByCondition">没注释方法</a></li>
+            <li><a href="#getCarParamCustomConfigPageListByCondition">没注释方法</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarParamCustomConfig&gt; addCarParamCustomConfig(CarParamCustomConfig entity, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; addUpdateDelBash(List&lt;CarParamCustomConfig&gt; addUpdateList,List&lt;Integer&gt; delIdList);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarParamCustomConfigById(Integer id, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;CarParamCustomConfig&gt; getCarParamCustomConfigById(Integer id, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarParamCustomConfig(CarParamCustomConfig entity, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarParamCustomConfigVo&gt;&gt; getCarParamCustomConfigListByCondition(CarParamCustomConfigSearchParameter searchVo, String sessionId);
+        </pre>
+                <h4 id="CarParamCustomConfigSearchParameter">入参 CarParamCustomConfigSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>brandId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>searialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>carStyleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车型ID</td>
+                            </tr>
+                            <tr>
+                                <td>paramItemId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 参数项Id</td>
+                            </tr>
+                            <tr>
+                                <td>itemValueId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamCustomConfigVo">出参 CarParamCustomConfigVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数枚举ID</td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 定制项价格</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>brandId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>styleName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>itemValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarParamCustomConfigVo&gt;&gt; getCarParamCustomConfigPageListByCondition(CarParamCustomConfigSearchParameter searchVo,Pagination page,String sessionId);
+        </pre>
+                <h4 id="CarParamCustomConfigSearchParameter">入参 CarParamCustomConfigSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>brandId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>searialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>carStyleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车型ID</td>
+                            </tr>
+                            <tr>
+                                <td>paramItemId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 参数项Id</td>
+                            </tr>
+                            <tr>
+                                <td>itemValueId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamCustomConfigVo">出参 CarParamCustomConfigVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数枚举ID</td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 定制项价格</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>brandId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>styleName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>itemValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarVideoListBySerialId"> 根据车系ID获取相关视频</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Pagination&lt;CarVideoVo&gt;&gt; getCarVideoListBySerialId(Integer serialId, Pagination pagination, String sessionId);
+        </pre>
+
+        <h4 id="CarVideoVo">出参 CarVideoVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频集ID</td>
+                </tr>
+                <tr>
+                    <td>typeId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型ID</td>
+                </tr>
+                <tr>
+                    <td>typeName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型名称</td>
+                </tr>
+                <tr>
+                    <td>videoName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频名称</td>
+                </tr>
+                <tr>
+                    <td>videoUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频url</td>
+                </tr>
+                <tr>
+                    <td>videoImageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频图片url</td>
+                </tr>
+                <tr>
+                    <td>duration</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 时长（秒）</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 大小（kb）</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>source</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 来源</td>
+                </tr>
+                <tr>
+                    <td>author</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频作者</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>creatorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者主键</td>
+                </tr>
+                <tr>
+                    <td>creatorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

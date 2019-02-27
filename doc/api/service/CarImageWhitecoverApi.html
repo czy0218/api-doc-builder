@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarImageWhitecover"> 添加</a></li>
+            <li><a href="#updateCarImageWhitecover"> 根据主键更新</a></li>
+            <li><a href="#phydelCarImageWhitecoverById"> 根据主键物理删除</a></li>
+            <li><a href="#phydelCarImageWhitecoverByIds"> 根据主键列表物理删除</a></li>
+            <li><a href="#getCarImageWhitecoverById"> 根据主键获取</a></li>
+            <li><a href="#getCarImageWhitecover"> 根据车系ID，年款，颜色ID获取</a></li>
+            <li><a href="#findCarImageWhitecoverPageList"> 分页查询</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Integer&gt; addCarImageWhitecover(CarImageWhitecover carImageWhitecover, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarImageWhitecover(CarImageWhitecover carImageWhitecover, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; phydelCarImageWhitecoverById(Integer id, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; phydelCarImageWhitecoverByIds(List&lt;Integer&gt; ids, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;CarImageWhitecoverVo&gt; getCarImageWhitecoverById(Integer id, String sessionId);
+        </pre>
+
+        <h4 id="CarImageWhitecoverVo">出参 CarImageWhitecoverVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片地址</td>
+                </tr>
+                <tr>
+                    <td>isDefault</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>colorSerialYearId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色ID</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarImageWhitecoverVo&gt; getCarImageWhitecover(Integer serialId,Integer year,Integer colorId, String sessionId);
+        </pre>
+
+        <h4 id="CarImageWhitecoverVo">出参 CarImageWhitecoverVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片地址</td>
+                </tr>
+                <tr>
+                    <td>isDefault</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>colorSerialYearId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色ID</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarImageWhitecoverVo&gt;&gt; findCarImageWhitecoverPageList(CarImageWhitecoverQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarImageWhitecoverQueryParameter">入参 CarImageWhitecoverQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID</td>
+                            </tr>
+                            <tr>
+                                <td>idList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>carSerialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID</td>
+                            </tr>
+                            <tr>
+                                <td>carSerialIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>year</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 年款</td>
+                            </tr>
+                            <tr>
+                                <td>yearList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 年款 列表</td>
+                            </tr>
+                            <tr>
+                                <td>isDefault</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>isDefaultList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 列表</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>colorSerialYearId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 外观颜色ID</td>
+                            </tr>
+                            <tr>
+                                <td>colorSerialYearIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 外观颜色ID 列表</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarImageWhitecoverVo">出参 CarImageWhitecoverVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片地址</td>
+                </tr>
+                <tr>
+                    <td>isDefault</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>colorSerialYearId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色ID</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

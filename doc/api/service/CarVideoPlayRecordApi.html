@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#phydelCarVideoPlayRecordById"> 根据主键物理删除</a></li>
+            <li><a href="#phydelCarVideoPlayRecordByIds"> 根据主键列表物理删除</a></li>
+            <li><a href="#getCarVideoPlayRecordById"> 根据主键获取</a></li>
+            <li><a href="#findCarVideoPlayRecordPageList"> 分页查询</a></li>
+            <li><a href="#getVideoRecordStatistics"> 查询统计信息</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Boolean&gt; phydelCarVideoPlayRecordById(Integer id, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; phydelCarVideoPlayRecordByIds(List&lt;Integer&gt; ids, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;CarVideoPlayRecordVo&gt; getCarVideoPlayRecordById(Integer id, String sessionId);
+        </pre>
+
+        <h4 id="CarVideoPlayRecordVo">出参 CarVideoPlayRecordVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频集ID</td>
+                </tr>
+                <tr>
+                    <td>serialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系名称</td>
+                </tr>
+                <tr>
+                    <td>typeId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型ID</td>
+                </tr>
+                <tr>
+                    <td>typeName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型名称</td>
+                </tr>
+                <tr>
+                    <td>videoId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频主键</td>
+                </tr>
+                <tr>
+                    <td>videoName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频名称</td>
+                </tr>
+                <tr>
+                    <td>videoUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频url</td>
+                </tr>
+                <tr>
+                    <td>userId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 观看用户ID</td>
+                </tr>
+                <tr>
+                    <td>videoImageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频图片url</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarVideoPlayRecordVo&gt;&gt; findCarVideoPlayRecordPageList(CarVideoPlayRecordQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarVideoPlayRecordQueryParameter">入参 CarVideoPlayRecordQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID</td>
+                            </tr>
+                            <tr>
+                                <td>idList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>packageId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频集ID</td>
+                            </tr>
+                            <tr>
+                                <td>packageIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频集ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID</td>
+                            </tr>
+                            <tr>
+                                <td>serialIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>serialName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>serialNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>serialNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>typeId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型ID</td>
+                            </tr>
+                            <tr>
+                                <td>typeIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>typeName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>typeNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>typeNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>videoId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频主键</td>
+                            </tr>
+                            <tr>
+                                <td>videoIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频主键 列表</td>
+                            </tr>
+                            <tr>
+                                <td>videoName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>videoNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>videoNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>userId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 观看用户ID</td>
+                            </tr>
+                            <tr>
+                                <td>userIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 观看用户ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>videoImageUrl</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频图片url (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>videoImageUrlStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频图片url (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>videoImageUrlLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频图片url (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 修改时间</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarVideoPlayRecordVo">出参 CarVideoPlayRecordVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频集ID</td>
+                </tr>
+                <tr>
+                    <td>serialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系名称</td>
+                </tr>
+                <tr>
+                    <td>typeId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型ID</td>
+                </tr>
+                <tr>
+                    <td>typeName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型名称</td>
+                </tr>
+                <tr>
+                    <td>videoId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频主键</td>
+                </tr>
+                <tr>
+                    <td>videoName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频名称</td>
+                </tr>
+                <tr>
+                    <td>videoUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频url</td>
+                </tr>
+                <tr>
+                    <td>userId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 观看用户ID</td>
+                </tr>
+                <tr>
+                    <td>videoImageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频图片url</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarVideoPlayRecordStatisticsVo&gt;&gt; getVideoRecordStatistics(CarVideoPlayRecordStatisticsQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarVideoPlayRecordStatisticsQueryParameter">入参 CarVideoPlayRecordStatisticsQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>packageId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频集ID</td>
+                            </tr>
+                            <tr>
+                                <td>packageIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频集ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID</td>
+                            </tr>
+                            <tr>
+                                <td>serialIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>serialName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>serialNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>serialNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>typeId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型ID</td>
+                            </tr>
+                            <tr>
+                                <td>typeIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>typeName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>typeNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>typeNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频类型名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>videoId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频主键</td>
+                            </tr>
+                            <tr>
+                                <td>videoIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频主键 列表</td>
+                            </tr>
+                            <tr>
+                                <td>videoName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>videoNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>videoNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 视频名称 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 修改时间</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarVideoPlayRecordStatisticsVo">出参 CarVideoPlayRecordStatisticsVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>videoId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频主键</td>
+                </tr>
+                <tr>
+                    <td>videoName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频名称</td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系名称</td>
+                </tr>
+                <tr>
+                    <td>typeName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 视频类型名称</td>
+                </tr>
+                <tr>
+                    <td>pv</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> pv</td>
+                </tr>
+                <tr>
+                    <td>uv</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> uv</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

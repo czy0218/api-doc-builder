@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarImageWhiteCoverByStyleIdAndColorId"> 根据车型ID，年款，颜色ID获取白底图</a></li>
+            <li><a href="#getCarImageWhiteCoverBySerialIdYearColorId">没注释方法</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarImageWhitecover&gt; getCarImageWhiteCoverByStyleIdAndColorId(Integer styleId, Integer colorId, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;CarImageWhitecover&gt; getCarImageWhiteCoverBySerialIdYearColorId(Integer serialId,Integer year,Integer colorId);
+        </pre>
+
+
+</body>
+
+</html>

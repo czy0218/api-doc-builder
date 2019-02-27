@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarCountry">没注释方法</a></li>
+            <li><a href="#updateCarCountry">更新国家</a></li>
+            <li><a href="#deleteCarCountryById">删除国家</a></li>
+            <li><a href="#getAllCarCountry">获取所有国家</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarCountry&gt; addCarCountry(CarCountry carCountry, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarCountry(CarCountry carCountry, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; deleteCarCountryById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarCountry&gt;&gt; getAllCarCountry(String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

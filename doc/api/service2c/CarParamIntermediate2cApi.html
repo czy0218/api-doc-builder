@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarParamListByStyleId"> 根据车型ID获取车型参数</a></li>
+            <li><a href="#getCarParamListByStyleIdList"> 根据车型ID列表获取车型参数</a></li>
+            <li><a href="#getCarStyleAllParamDataList"> 获取所有车型参数项及参数值数据</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarParamIntermediateVo2C&gt; getCarParamListByStyleId(Integer styleId, String sessionId);
+        </pre>
+
+        <h4 id="CarParamIntermediateVo2C">出参 CarParamIntermediateVo2C</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>StyleName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型名称</td>
+                </tr>
+                <tr>
+                    <td>minReferPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 最低指导价</td>
+                </tr>
+                <tr>
+                    <td>countryReferPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全国最低参考价</td>
+                </tr>
+                <tr>
+                    <td>subsidy</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 补助</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商</td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别</td>
+                </tr>
+                <tr>
+                    <td>carParamIntermediateVoList</td>
+                    <td>List&lt;CarParamIntermediateVo&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数列表</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarParamIntermediateVo2C&gt;&gt; getCarParamListByStyleIdList(List&lt;Integer&gt; styleIds, String sessionId);
+        </pre>
+
+        <h4 id="CarParamIntermediateVo2C">出参 CarParamIntermediateVo2C</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>StyleName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型名称</td>
+                </tr>
+                <tr>
+                    <td>minReferPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 最低指导价</td>
+                </tr>
+                <tr>
+                    <td>countryReferPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全国最低参考价</td>
+                </tr>
+                <tr>
+                    <td>subsidy</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 补助</td>
+                </tr>
+                <tr>
+                    <td>producerName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 厂商</td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别</td>
+                </tr>
+                <tr>
+                    <td>carParamIntermediateVoList</td>
+                    <td>List&lt;CarParamIntermediateVo&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数列表</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarParamIntermediateVo&gt;&gt; getCarStyleAllParamDataList(List&lt;Integer&gt; styleIds, String sessionid);
+        </pre>
+
+        <h4 id="CarParamIntermediateVo">出参 CarParamIntermediateVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>paramValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数ID</td>
+                </tr>
+                <tr>
+                    <td>paramValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数值</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>paramId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项ID</td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项名称</td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数项ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数项名称</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项枚举ID</td>
+                </tr>
+                <tr>
+                    <td>isCustomizable</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否可定制</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

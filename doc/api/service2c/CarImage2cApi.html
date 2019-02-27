@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarImagePageListByStyleIdAndImageGroupId">根据车型ID和图片分组获取图片集合</a></li>
+            <li><a href="#findCarImagePositionListByStyleIdAndColorId">根据车型ID和外观颜色获取8方向位置图</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Pagination&lt;CarImageVo&gt;&gt; findCarImagePageListByStyleIdAndImageGroupId(Integer styleId, Integer imageGroupId, Pagination pagination, String sessionid);
+        </pre>
+
+        <h4 id="CarImageVo">出参 CarImageVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图集ID</td>
+                </tr>
+                <tr>
+                    <td>propertyId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性ID</td>
+                </tr>
+                <tr>
+                    <td>imageName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片名称</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片url 带占位符</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>int</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>packageName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片集名称</td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>colorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色ID</td>
+                </tr>
+                <tr>
+                    <td>interiorColor</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 内饰颜色ID</td>
+                </tr>
+                <tr>
+                    <td>weight</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 权重</td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组ID</td>
+                </tr>
+                <tr>
+                    <td>groupName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组名称</td>
+                </tr>
+                <tr>
+                    <td>propertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性名称</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarImageVo&gt;&gt; findCarImagePositionListByStyleIdAndColorId(Integer styleId, Integer colorId, String sessionid);
+        </pre>
+
+        <h4 id="CarImageVo">出参 CarImageVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Long</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图集ID</td>
+                </tr>
+                <tr>
+                    <td>propertyId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性ID</td>
+                </tr>
+                <tr>
+                    <td>imageName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片名称</td>
+                </tr>
+                <tr>
+                    <td>imageUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片url 带占位符</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>year</td>
+                    <td>int</td>
+                    <td></td>
+                    <td></td>
+                    <td> 年款</td>
+                </tr>
+                <tr>
+                    <td>packageName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片集名称</td>
+                </tr>
+                <tr>
+                    <td>carStyleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>carSerialId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系ID</td>
+                </tr>
+                <tr>
+                    <td>colorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 外观颜色ID</td>
+                </tr>
+                <tr>
+                    <td>interiorColor</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 内饰颜色ID</td>
+                </tr>
+                <tr>
+                    <td>weight</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 权重</td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组ID</td>
+                </tr>
+                <tr>
+                    <td>groupName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组名称</td>
+                </tr>
+                <tr>
+                    <td>propertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性名称</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

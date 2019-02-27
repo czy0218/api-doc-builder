@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarParamIntermediatePageList"> 分页查询</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Pagination&lt;CarParamIntermediateVo&gt;&gt; findCarParamIntermediatePageList(CarParamIntermediateQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarParamIntermediateQueryParameter">入参 CarParamIntermediateQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>自增ID</td>
+                            </tr>
+                            <tr>
+                                <td>idList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>自增ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>styleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型ID</td>
+                            </tr>
+                            <tr>
+                                <td>styleIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>paramValueId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型参数ID</td>
+                            </tr>
+                            <tr>
+                                <td>paramValueIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型参数ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>paramValue</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型参数值 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>paramValueStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型参数值 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>paramValueLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>车型参数值 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>sort</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>排序</td>
+                            </tr>
+                            <tr>
+                                <td>sortList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>排序列表</td>
+                            </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项ID</td>
+                            </tr>
+                            <tr>
+                                <td>paramIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>paramName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>paramNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项名称 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>paramNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项名称 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>父参数项ID</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>父参数项ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>父参数项名称 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>父参数项名称 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>父参数项名称 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>itemValueId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项枚举ID</td>
+                            </tr>
+                            <tr>
+                                <td>itemValueIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>参数项枚举ID列表</td>
+                            </tr>
+                            <tr>
+                                <td>isCustomizable</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>是否可定制</td>
+                            </tr>
+                            <tr>
+                                <td>isCustomizableList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>是否可定制列表</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>是否有效</td>
+                            </tr>
+                            <tr>
+                                <td>remark</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>备注 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>remarkStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>备注 (开始匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>remarkLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>备注 (泛匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>开始创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>结束创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>开始修改时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td>结束修改时间</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamIntermediateVo">出参 CarParamIntermediateVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>styleId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型ID</td>
+                </tr>
+                <tr>
+                    <td>paramValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数ID</td>
+                </tr>
+                <tr>
+                    <td>paramValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车型参数值</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>paramId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项ID</td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项名称</td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数项ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数项名称</td>
+                </tr>
+                <tr>
+                    <td>itemValueId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数项枚举ID</td>
+                </tr>
+                <tr>
+                    <td>isCustomizable</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否可定制</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

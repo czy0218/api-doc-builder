@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+        <li><a href="#CarBrandQueryParameter">CarBrandQueryParameter</a></li>
+        <li><a href="#CarColorInteriorListQueryParameter">CarColorInteriorListQueryParameter</a></li>
+        <li><a href="#CarColorInteriorStyleRelaQueryParameter">CarColorInteriorStyleRelaQueryParameter</a></li>
+        <li><a href="#CarColorListQueryParameter">CarColorListQueryParameter</a></li>
+        <li><a href="#CarColorSerialYearQueryParameter">CarColorSerialYearQueryParameter</a></li>
+        <li><a href="#CarColorStyleRelaQueryParameter">CarColorStyleRelaQueryParameter</a></li>
+        <li><a href="#CarHighlightsImgPackageQueryParameter">CarHighlightsImgPackageQueryParameter</a></li>
+        <li><a href="#CarHighlightsImgQueryParameter">CarHighlightsImgQueryParameter</a></li>
+        <li><a href="#CarImagePackageCreateParameter">CarImagePackageCreateParameter</a></li>
+        <li><a href="#CarImagePackageSearchParameter">CarImagePackageSearchParameter</a></li>
+        <li><a href="#CarImagePropertyQueryParameter">CarImagePropertyQueryParameter</a></li>
+        <li><a href="#CarImageWhitecoverQueryParameter">CarImageWhitecoverQueryParameter</a></li>
+        <li><a href="#CarLevelQueryParameter">CarLevelQueryParameter</a></li>
+        <li><a href="#CarMaintenanceManualInfoQueryParameter">CarMaintenanceManualInfoQueryParameter</a></li>
+        <li><a href="#CarMaintenanceManualQueryParameter">CarMaintenanceManualQueryParameter</a></li>
+        <li><a href="#CarParamCustomConfigSearchParameter">CarParamCustomConfigSearchParameter</a></li>
+        <li><a href="#CarParamIntermediateQueryParameter">CarParamIntermediateQueryParameter</a></li>
+        <li><a href="#CarParamSearchParameter">CarParamSearchParameter</a></li>
+        <li><a href="#CarParamSerialConfigQueryParameter">CarParamSerialConfigQueryParameter</a></li>
+        <li><a href="#CarSerialColorInteriorQueryParameter">CarSerialColorInteriorQueryParameter</a></li>
+        <li><a href="#CarSerialColorQueryParameter">CarSerialColorQueryParameter</a></li>
+        <li><a href="#CarSerialParameter">CarSerialParameter</a></li>
+        <li><a href="#CarSerialQueryParameter">CarSerialQueryParameter</a></li>
+        <li><a href="#CarStyleParameter">CarStyleParameter</a></li>
+        <li><a href="#CarStyleQueryParameter">CarStyleQueryParameter</a></li>
+        <li><a href="#CarVideoPackageQueryParameter">CarVideoPackageQueryParameter</a></li>
+        <li><a href="#CarVideoPlayRecordQueryParameter">CarVideoPlayRecordQueryParameter</a></li>
+        <li><a href="#CarVideoPlayRecordStatisticsQueryParameter">CarVideoPlayRecordStatisticsQueryParameter</a></li>
+        <li><a href="#CarVideoQueryParameter">CarVideoQueryParameter</a></li>
+        <li><a href="#CarVideoTypeQueryParameter">CarVideoTypeQueryParameter</a></li>
+        <li><a href="#CarYearQueryParameter">CarYearQueryParameter</a></li>
+        <li><a href="#SortParameter">SortParameter</a></li>
+</ul>
+
+    <h4 id="CarBrandQueryParameter">CarBrandQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>品牌ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>品牌ID列表</td>
+            </tr>
+            <tr>
+                <td>producerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>厂商ID</td>
+            </tr>
+            <tr>
+                <td>producerIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>厂商ID列表</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>品牌名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>brandNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>品牌名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>brandNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>品牌名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>showName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>显示名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>showNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>显示名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>showNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>显示名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>ename</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>英文名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>enameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>英文名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>enameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>英文名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>allSpell</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>全拼 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>allSpellStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>全拼 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>allSpellLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>全拼 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>countryId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>国家ID</td>
+            </tr>
+            <tr>
+                <td>countryIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>国家ID列表</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>是否有效</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorInteriorListQueryParameter">CarColorInteriorListQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否生效</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorInteriorStyleRelaQueryParameter">CarColorInteriorStyleRelaQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否生效</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否默认</td>
+            </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorListQueryParameter">CarColorListQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>colorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 颜色名称</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否生效</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorSerialYearQueryParameter">CarColorSerialYearQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarColorStyleRelaQueryParameter">CarColorStyleRelaQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarHighlightsImgPackageQueryParameter">CarHighlightsImgPackageQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 亮点图集名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>packageNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 亮点图集名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>packageNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 亮点图集名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>serialNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 创建人主键 列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建人 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建人 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建人 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarHighlightsImgQueryParameter">CarHighlightsImgQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 图集ID</td>
+            </tr>
+            <tr>
+                <td>packageIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 图集ID 列表</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者ID</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 创建者ID 列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 更新时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePackageCreateParameter">CarImagePackageCreateParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 图集名称</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款ID</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+            <tr>
+                <td>interiorColor</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色ID</td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 权重</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>createTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePackageSearchParameter">CarImagePackageSearchParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系Id 不能为空</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分组Id 不能为空</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车款Id</td>
+            </tr>
+            <tr>
+                <td>colorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色Id</td>
+            </tr>
+            <tr>
+                <td>colorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>列表</td>
+            </tr>
+            <tr>
+                <td>interiorColorList</td>
+                <td>List&lt;Long&gt;</td>
+                <td></td>
+                <td></td>
+                <td>列表</td>
+            </tr>
+            <tr>
+                <td>interiorColor</td>
+                <td>Long</td>
+                <td></td>
+                <td></td>
+                <td> 内饰颜色Id</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImagePropertyQueryParameter">CarImagePropertyQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>imagePropertyId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>imagePropertyParentId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>propertyName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>groupId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>groupName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sortParameter</td>
+                <td>SortParameter</td>
+                <td></td>
+                <td></td>
+                <td> 排序字段（枚举值）</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarImageWhitecoverQueryParameter">CarImageWhitecoverQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>carSerialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>carSerialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID 列表</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>yearList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 年款 列表</td>
+            </tr>
+            <tr>
+                <td>isDefault</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>isDefaultList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 列表</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+            <tr>
+                <td>colorSerialYearId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID</td>
+            </tr>
+            <tr>
+                <td>colorSerialYearIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 外观颜色ID 列表</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarLevelQueryParameter">CarLevelQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 级别名称</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarMaintenanceManualInfoQueryParameter">CarMaintenanceManualInfoQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>主键</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>主键列表</td>
+            </tr>
+            <tr>
+                <td>maintenanceManualId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>手册id</td>
+            </tr>
+            <tr>
+                <td>maintenanceManualIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>手册id列表</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>车系id</td>
+            </tr>
+            <tr>
+                <td>serialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>车系id列表</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车系名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车系名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车系名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>engineCapacityMin</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td>最小排量</td>
+            </tr>
+            <tr>
+                <td>engineCapacityMax</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td>最大排量</td>
+            </tr>
+            <tr>
+                <td>gearType</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>变速箱类型 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>gearTypeStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>变速箱类型 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>gearTypeLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>变速箱类型 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>创建者主键列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>创建者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>创建者 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>创建者 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始更新时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarMaintenanceManualQueryParameter">CarMaintenanceManualQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>主键</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>主键列表</td>
+            </tr>
+            <tr>
+                <td>imgUrlLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>手册图片 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>创建者主键列表</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>创建者 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始创建日期</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束创建日期</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>车系搜索</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamCustomConfigSearchParameter">CarParamCustomConfigSearchParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>searialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>paramItemId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 参数项Id</td>
+            </tr>
+            <tr>
+                <td>itemValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamIntermediateQueryParameter">CarParamIntermediateQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>自增ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>自增ID列表</td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>车型ID</td>
+            </tr>
+            <tr>
+                <td>styleIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>车型ID列表</td>
+            </tr>
+            <tr>
+                <td>paramValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>车型参数ID</td>
+            </tr>
+            <tr>
+                <td>paramValueIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>车型参数ID列表</td>
+            </tr>
+            <tr>
+                <td>paramValue</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车型参数值 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>paramValueStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车型参数值 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>paramValueLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>车型参数值 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>排序</td>
+            </tr>
+            <tr>
+                <td>sortList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>排序列表</td>
+            </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>参数项ID</td>
+            </tr>
+            <tr>
+                <td>paramIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>参数项ID列表</td>
+            </tr>
+            <tr>
+                <td>paramName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>参数项名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>paramNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>参数项名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>paramNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>参数项名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>父参数项ID</td>
+            </tr>
+            <tr>
+                <td>parentParamIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>父参数项ID列表</td>
+            </tr>
+            <tr>
+                <td>parentParamName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>父参数项名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>parentParamNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>父参数项名称 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>parentParamNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>父参数项名称 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>itemValueId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>参数项枚举ID</td>
+            </tr>
+            <tr>
+                <td>itemValueIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>参数项枚举ID列表</td>
+            </tr>
+            <tr>
+                <td>isCustomizable</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>是否可定制</td>
+            </tr>
+            <tr>
+                <td>isCustomizableList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td>是否可定制列表</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>是否有效</td>
+            </tr>
+            <tr>
+                <td>remark</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>备注 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>remarkStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>备注 (开始匹配）</td>
+            </tr>
+            <tr>
+                <td>remarkLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td>备注 (泛匹配）</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>开始修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td>结束修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamSearchParameter">CarParamSearchParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>dataSource</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>isMulti</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarParamSerialConfigQueryParameter">CarParamSerialConfigQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>configId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>parentParamId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarSerialColorInteriorQueryParameter">CarSerialColorInteriorQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系id</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款ID</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarSerialColorQueryParameter">CarSerialColorQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系id</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款ID</td>
+            </tr>
+            <tr>
+                <td>carStyleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarSerialParameter">CarSerialParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serial</td>
+                <td>CarSerialVo</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>paramItems</td>
+                <td>List&lt;CarParamItemVo&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>colors</td>
+                <td>List&lt;CarColorStyleRelaVo&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarSerialQueryParameter">CarSerialQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>serialEname</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 英文名称</td>
+            </tr>
+            <tr>
+                <td>showName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 显示名称</td>
+            </tr>
+            <tr>
+                <td>levelId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 级别ID</td>
+            </tr>
+            <tr>
+                <td>levelName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 级别名称</td>
+            </tr>
+            <tr>
+                <td>allSpell</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 全拼</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效，0不可用，1可用</td>
+            </tr>
+            <tr>
+                <td>sortParameter</td>
+                <td>SortParameter</td>
+                <td></td>
+                <td></td>
+                <td> 排序字段（枚举值）</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarStyleParameter">CarStyleParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>carStyleVo</td>
+                <td>CarStyleVo</td>
+                <td></td>
+                <td></td>
+                <td> 车型信息</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名称</td>
+            </tr>
+            <tr>
+                <td>producerName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 厂商名称</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarStyleQueryParameter">CarStyleQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>brandName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 品牌名称</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>styleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 状态</td>
+            </tr>
+            <tr>
+                <td>styleName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车型名称</td>
+            </tr>
+            <tr>
+                <td>year</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 年款</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否生效</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPackageQueryParameter">CarVideoPackageQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>packageName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频集名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>packageNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频集名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>packageNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频集名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分类</td>
+            </tr>
+            <tr>
+                <td>typeList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 分类 列表</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>serialNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键 列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPlayRecordQueryParameter">CarVideoPlayRecordQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID</td>
+            </tr>
+            <tr>
+                <td>packageIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>serialNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>typeId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID</td>
+            </tr>
+            <tr>
+                <td>typeIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID 列表</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>typeNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>typeNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>videoId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键</td>
+            </tr>
+            <tr>
+                <td>videoIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键 列表</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>videoNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>videoNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>userId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 观看用户ID</td>
+            </tr>
+            <tr>
+                <td>userIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 观看用户ID 列表</td>
+            </tr>
+            <tr>
+                <td>videoImageUrl</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频图片url (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>videoImageUrlStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频图片url (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>videoImageUrlLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频图片url (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoPlayRecordStatisticsQueryParameter">CarVideoPlayRecordStatisticsQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID</td>
+            </tr>
+            <tr>
+                <td>packageIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID</td>
+            </tr>
+            <tr>
+                <td>serialIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 车系ID 列表</td>
+            </tr>
+            <tr>
+                <td>serialName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>serialNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>serialNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 车系名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>typeId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID</td>
+            </tr>
+            <tr>
+                <td>typeIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID 列表</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>typeNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>typeNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>videoId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键</td>
+            </tr>
+            <tr>
+                <td>videoIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频主键 列表</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>videoNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>videoNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoQueryParameter">CarVideoQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> ID 列表</td>
+            </tr>
+            <tr>
+                <td>packageId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID</td>
+            </tr>
+            <tr>
+                <td>packageIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频集ID 列表</td>
+            </tr>
+            <tr>
+                <td>typeId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID</td>
+            </tr>
+            <tr>
+                <td>typeIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型ID 列表</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>typeNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>typeNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>videoName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>videoNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>videoNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>duration</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 时长（秒）</td>
+            </tr>
+            <tr>
+                <td>durationList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 时长（秒） 列表</td>
+            </tr>
+            <tr>
+                <td>size</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 大小（kb）</td>
+            </tr>
+            <tr>
+                <td>sizeList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 大小（kb） 列表</td>
+            </tr>
+            <tr>
+                <td>sort</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 排序</td>
+            </tr>
+            <tr>
+                <td>sortList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 排序 列表</td>
+            </tr>
+            <tr>
+                <td>source</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 来源</td>
+            </tr>
+            <tr>
+                <td>sourceList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 来源 列表</td>
+            </tr>
+            <tr>
+                <td>author</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频作者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>authorStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频作者 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>authorLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频作者 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键 列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarVideoTypeQueryParameter">CarVideoTypeQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 用户ID</td>
+            </tr>
+            <tr>
+                <td>idList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 用户ID 列表</td>
+            </tr>
+            <tr>
+                <td>typeCode</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型编码 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>typeCodeStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型编码 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>typeCodeLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型编码 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>typeName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>typeNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>typeNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 视频类型名称 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>isActive</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 是否有效</td>
+            </tr>
+            <tr>
+                <td>creatorId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键</td>
+            </tr>
+            <tr>
+                <td>creatorIdList</td>
+                <td>List&lt;Integer&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 创建者主键 列表</td>
+            </tr>
+            <tr>
+                <td>creatorName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (完全匹配）</td>
+            </tr>
+            <tr>
+                <td>creatorNameStartWith</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (开始匹配)</td>
+            </tr>
+            <tr>
+                <td>creatorNameLike</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 创建者 (泛匹配)</td>
+            </tr>
+            <tr>
+                <td>createTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 创建时间</td>
+            </tr>
+            <tr>
+                <td>createTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMin</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 开始 修改时间</td>
+            </tr>
+            <tr>
+                <td>updateTimeMax</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 结束 修改时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="CarYearQueryParameter">CarYearQueryParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>brandId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 品牌ID</td>
+            </tr>
+            <tr>
+                <td>serialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 车型ID</td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 状态</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="SortParameter">SortParameter</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>sortFields</td>
+                <td>List&lt;SortField&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+</body>
+
+</html>

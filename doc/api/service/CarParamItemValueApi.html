@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarParamItemValue"> 新增参数枚举值</a></li>
+            <li><a href="#updateCarParamItemValue"> 修改参数枚举值</a></li>
+            <li><a href="#getCarParamItemValueById"> 根据主键查询参数枚举值</a></li>
+            <li><a href="#getCarParamItemValueByItemId">根据配置项目ID获取配置数值</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarParamItemValue&gt; addCarParamItemValue(CarParamItemValue carParamItemValue, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarParamItemValue&gt; updateCarParamItemValue(CarParamItemValue carParamItemValue, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarParamItemValue&gt; getCarParamItemValueById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarParamItemValue&gt;&gt; getCarParamItemValueByItemId(Integer id, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

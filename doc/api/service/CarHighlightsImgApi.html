@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarHighlightsImg"> 添加</a></li>
+            <li><a href="#addCarHighlightsImgList"> 添加列表</a></li>
+            <li><a href="#updateCarHighlightsImg"> 根据主键更新</a></li>
+            <li><a href="#sortCarHighlightsImgs"> 排序</a></li>
+            <li><a href="#delCarHighlightsImgById"> 根据主键删除</a></li>
+            <li><a href="#delCarHighlightsImgByIdList"> 根据主键列表删除</a></li>
+            <li><a href="#getCarHighlightsImgById"> 根据主键获取</a></li>
+            <li><a href="#findCarHighlightsImgPageList"> 分页查询</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Integer&gt; addCarHighlightsImg(CarHighlightsImg carHighlightsImg, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Integer&gt; addCarHighlightsImgList(List&lt;CarHighlightsImg&gt; imgs, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarHighlightsImg(CarHighlightsImg carHighlightsImg, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; sortCarHighlightsImgs(List&lt;Integer&gt; ids, Integer packageId, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarHighlightsImgById(Integer id, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarHighlightsImgByIdList(List&lt;Integer&gt; ids, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;CarHighlightsImgVo&gt; getCarHighlightsImgById(Integer id, String sessionId);
+        </pre>
+
+        <h4 id="CarHighlightsImgVo">出参 CarHighlightsImgVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图集ID</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片路径</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>creatorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者ID</td>
+                </tr>
+                <tr>
+                    <td>creatorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 更新时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarHighlightsImgVo&gt;&gt; findCarHighlightsImgPageList(CarHighlightsImgQueryParameter parameter, Pagination pagination, String sessionId);
+        </pre>
+                <h4 id="CarHighlightsImgQueryParameter">入参 CarHighlightsImgQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID</td>
+                            </tr>
+                            <tr>
+                                <td>idList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>packageId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 图集ID</td>
+                            </tr>
+                            <tr>
+                                <td>packageIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 图集ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 是否有效</td>
+                            </tr>
+                            <tr>
+                                <td>creatorId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 创建者ID</td>
+                            </tr>
+                            <tr>
+                                <td>creatorIdList</td>
+                                <td>List&lt;Integer&gt;</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 创建者ID 列表</td>
+                            </tr>
+                            <tr>
+                                <td>creatorName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 创建者 (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>creatorNameStartWith</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 创建者 (开始匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>creatorNameLike</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 创建者 (泛匹配)</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>createTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 创建时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMin</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 开始 更新时间</td>
+                            </tr>
+                            <tr>
+                                <td>updateTimeMax</td>
+                                <td>Date</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 结束 更新时间</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarHighlightsImgVo">出参 CarHighlightsImgVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>packageId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图集ID</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 图片路径</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>creatorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者ID</td>
+                </tr>
+                <tr>
+                    <td>creatorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 更新时间</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

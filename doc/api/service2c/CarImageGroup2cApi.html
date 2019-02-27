@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarImageGroupListByStyleId">根据车型ID获取图片分组列表</a></li>
+            <li><a href="#getCarImageGroupListAll">获取图片所有分组</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarImageGroup&gt;&gt; findCarImageGroupListByStyleId(Integer styleId, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarImageGroup&gt;&gt; getCarImageGroupListAll(String sessionId);
+        </pre>
+
+
+</body>
+
+</html>

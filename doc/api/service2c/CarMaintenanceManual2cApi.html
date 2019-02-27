@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#getCarMaintenanceManualPageList">根据车系id获取配置车系保养图</a></li>
+    </ul>
+
+        <pre>
+Result&lt;Pagination&lt;CarMaintenanceManualVo&gt;&gt; getCarMaintenanceManualPageList(Integer serialId, Pagination pagination, String sessionId);
+        </pre>
+
+        <h4 id="CarMaintenanceManualVo">出参 CarMaintenanceManualVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>imgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 手册图片</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>creatorId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者主键</td>
+                </tr>
+                <tr>
+                    <td>creatorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建者</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建日期</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 更新日期</td>
+                </tr>
+                <tr>
+                    <td>carMaintenanceManualInfoVoList</td>
+                    <td>List&lt;CarMaintenanceManualInfoVo&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系保养关联信息</td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

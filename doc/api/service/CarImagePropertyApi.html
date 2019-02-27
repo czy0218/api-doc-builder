@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findLevel1CarImagePropertyListByCarImagePackageId">根据图集Id获取分组Id，再根据分组Id获取属性表parent_property_Id为0的数据</a></li>
+            <li><a href="#findLevel2CarImagePropertyListByParentPropertyID">根据parent_property_Id查询下级属性分类</a></li>
+            <li><a href="#addCarImageProperty">添加车型图片属性</a></li>
+            <li><a href="#updateCarImageProperty">修改车型图片属性</a></li>
+            <li><a href="#updateCarImagePropertyActiveBatch">批量更新车型图片属性可用状态</a></li>
+            <li><a href="#findCarImagePropertyPageList">条件分页查询车型图片属性信息</a></li>
+            <li><a href="#findCarImagePropertyList">条件查询车型图片属性信息</a></li>
+            <li><a href="#checkCarImagePropertyIsExist">判断车型图片属性是否已存在</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarImageProperty&gt;&gt; findLevel1CarImagePropertyListByCarImagePackageId(int carImagePackageId, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarImageProperty&gt;&gt; findLevel2CarImagePropertyListByParentPropertyID(int parentPropertyID, Pagination pagination, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Integer&gt; addCarImageProperty(CarImageProperty imageProperty, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarImageProperty(CarImageProperty imageProperty, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarImagePropertyActiveBatch(List&lt;Integer&gt; imagePropertyIds, Integer active, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarImagePropertyVo&gt;&gt; findCarImagePropertyPageList(CarImagePropertyQueryParameter queryParameter, Pagination pagination, String sessionid);
+        </pre>
+                <h4 id="CarImagePropertyQueryParameter">入参 CarImagePropertyQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>imagePropertyId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>imagePropertyParentId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>propertyName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>groupId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>groupName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>sortParameter</td>
+                                <td>SortParameter</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 排序字段（枚举值）</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarImagePropertyVo">出参 CarImagePropertyVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>propertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性名称</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组ID</td>
+                </tr>
+                <tr>
+                    <td>groupName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>parentPropertyId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父属性ID</td>
+                </tr>
+                <tr>
+                    <td>parentPropertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarImagePropertyVo&gt;&gt; findCarImagePropertyList(CarImagePropertyQueryParameter queryParameter, String sessionid);
+        </pre>
+                <h4 id="CarImagePropertyQueryParameter">入参 CarImagePropertyQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>imagePropertyId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>imagePropertyParentId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>propertyName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>groupId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>groupName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>sortParameter</td>
+                                <td>SortParameter</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 排序字段（枚举值）</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarImagePropertyVo">出参 CarImagePropertyVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>propertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 属性名称</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 分组ID</td>
+                </tr>
+                <tr>
+                    <td>groupName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>parentPropertyId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父属性ID</td>
+                </tr>
+                <tr>
+                    <td>parentPropertyName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Boolean&gt; checkCarImagePropertyIsExist(String imagePropertylName, Integer parentPropertyId, Integer groupId, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

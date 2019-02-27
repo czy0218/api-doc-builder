@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#addCarParamItem">添加车型参数</a></li>
+            <li><a href="#updateCarParamItem">车型参数更新</a></li>
+            <li><a href="#delCarParamItemById">根据主键删除参数配置,会级连删除相关的配置项数值和配置枚举</a></li>
+            <li><a href="#delCarParamItemBatchById">根据主键批量删除参数配置,会级连删除相关的配置项数值和配置枚举</a></li>
+            <li><a href="#delCarparamItemValueById">根据主键删除参数配置项值</a></li>
+            <li><a href="#getCarParamItemById">根据主键查询参数配置</a></li>
+            <li><a href="#findCarParamItemPageList">分页查询参数配置信息</a></li>
+            <li><a href="#findCarParamList">没注释方法</a></li>
+            <li><a href="#findCarParamItemListBySerialId">按车系ID查询所属车系参数项</a></li>
+            <li><a href="#findCarParamItemList">查询全量车型参数项（包含父级）</a></li>
+            <li><a href="#existsCarParamItemName">精确检查配置项目名是否存在</a></li>
+            <li><a href="#existsCarParamItemValueName">精确检查配置项目数值是否存在</a></li>
+            <li><a href="#getAllCarparamList">获取所有制定条件的配置项目,此方法对findCarParamItemPageList以pagesize为1000进行封装</a></li>
+            <li><a href="#getAllCarparamVoList">获取所有制定条件的配置项目复合对象,此方法对findCarParamList以pagesize为1000进行封装</a></li>
+    </ul>
+
+        <pre>
+Result&lt;CarParamVo&gt; addCarParamItem(CarParamItem carParamItem, List&lt;CarParamItemValue&gt; carParamItemValue, String sessionid);
+        </pre>
+
+        <h4 id="CarParamVo">出参 CarParamVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>carParamItem</td>
+                    <td>CarParamItem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemValue</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarParamVo&gt; updateCarParamItem(CarParamItem carParamItem, List&lt;CarParamItemValue&gt; carParamItemValue, String sessionid);
+        </pre>
+
+        <h4 id="CarParamVo">出参 CarParamVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>carParamItem</td>
+                    <td>CarParamItem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemValue</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Boolean&gt; delCarParamItemById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarParamItemBatchById(List&lt;Integer&gt; id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; delCarparamItemValueById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;CarParamVo&gt; getCarParamItemById(Integer id, String sessionid);
+        </pre>
+
+        <h4 id="CarParamVo">出参 CarParamVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>carParamItem</td>
+                    <td>CarParamItem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemValue</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarParamItem&gt;&gt; findCarParamItemPageList(CarParamSearchParameter carParamSearchParameter, Pagination /** * @描述：分页查询参数配置信息 * @version 1.0 17-9-13 17-9-13 由谢青靖（xieqj@cloud-young.com）创建 * @param [name, parentparamid, dataSource, isAcitive, isMulti, pagination, sessionid] * @返回 复合型对象，每一个数据包括配置项目和配置项目数值 */pagination, String sessionid);
+        </pre>
+                <h4 id="CarParamSearchParameter">入参 CarParamSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>dataSource</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isMulti</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarParamVo&gt;&gt; findCarParamList(CarParamSearchParameter carParamSearchParameter, Pagination pagination, String sessionid);
+        </pre>
+                <h4 id="CarParamSearchParameter">入参 CarParamSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>dataSource</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isMulti</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamVo">出参 CarParamVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>carParamItem</td>
+                    <td>CarParamItem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemValue</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarParamItemVo&gt;&gt; findCarParamItemListBySerialId(Integer serialId, String sessionid);
+        </pre>
+
+        <h4 id="CarParamItemVo">出参 CarParamItemVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数名称</td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 名称</td>
+                </tr>
+                <tr>
+                    <td>paramEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>paramUnit</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 单位</td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数描述</td>
+                </tr>
+                <tr>
+                    <td>dataType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数类型</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>isMultiValue</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>dataSource</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>componentType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+                </tr>
+                <tr>
+                    <td>componentTypeEnumValues</td>
+                    <td>List&lt;String&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型枚举值（RadioBox、CheckBox、Select）</td>
+                </tr>
+                <tr>
+                    <td>carParamItemValueList</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数对应枚举列表</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarParamItemVo&gt;&gt; findCarParamItemList(CarParamSearchParameter searchParameter, String sessionid);
+        </pre>
+                <h4 id="CarParamSearchParameter">入参 CarParamSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>dataSource</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isMulti</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamItemVo">出参 CarParamItemVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>parentParamId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数ID</td>
+                </tr>
+                <tr>
+                    <td>parentParamName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 父参数名称</td>
+                </tr>
+                <tr>
+                    <td>paramName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 名称</td>
+                </tr>
+                <tr>
+                    <td>paramEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>paramUnit</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 单位</td>
+                </tr>
+                <tr>
+                    <td>descr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数描述</td>
+                </tr>
+                <tr>
+                    <td>dataType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数类型</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>remark</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 备注</td>
+                </tr>
+                <tr>
+                    <td>isMultiValue</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>dataSource</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>componentType</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型(Text、RadioBox、CheckBox、Select)</td>
+                </tr>
+                <tr>
+                    <td>componentTypeEnumValues</td>
+                    <td>List&lt;String&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 控件类型枚举值（RadioBox、CheckBox、Select）</td>
+                </tr>
+                <tr>
+                    <td>carParamItemValueList</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td> 参数对应枚举列表</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Boolean&gt; existsCarParamItemName(String name, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; existsCarParamItemValueName(String name, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarParamItem&gt;&gt; getAllCarparamList(CarParamSearchParameter carParamSearchParameter, String sessionid);
+        </pre>
+                <h4 id="CarParamSearchParameter">入参 CarParamSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>dataSource</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isMulti</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+
+        <pre>
+Result&lt;List&lt;CarParamVo&gt;&gt; getAllCarparamVoList(CarParamSearchParameter carParamSearchParameter, String sessionid);
+        </pre>
+                <h4 id="CarParamSearchParameter">入参 CarParamSearchParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>paramId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> (完全匹配）</td>
+                            </tr>
+                            <tr>
+                                <td>parentParamId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>dataSource</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>isMulti</td>
+                                <td>Boolean</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarParamVo">出参 CarParamVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>carParamItem</td>
+                    <td>CarParamItem</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>carParamItemValue</td>
+                    <td>List&lt;CarParamItemValue&gt;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+        <br/>
+
+</body>
+
+</html>

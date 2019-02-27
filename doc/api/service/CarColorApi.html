@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarSerialColorlist">没注释方法</a></li>
+            <li><a href="#findCarColorPageList">分页查询外观颜色信息</a></li>
+            <li><a href="#findCarColorList">条件查询外观颜色信息</a></li>
+            <li><a href="#findCarColorListByIds">外观颜色集合获取外观颜色信息</a></li>
+            <li><a href="#getCarColorById">根据主键获取外观颜色信息</a></li>
+            <li><a href="#addCarColor">添加外观颜色</a></li>
+            <li><a href="#updateCarColor">修改外观颜色</a></li>
+            <li><a href="#deleteCarColorById">主键删除外观颜色</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarColor&gt;&gt; findCarSerialColorlist(CarSerialColorQueryParameter queryParams, String sessionid);
+        </pre>
+                <h4 id="CarSerialColorQueryParameter">入参 CarSerialColorQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>serialId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车系id</td>
+                            </tr>
+                            <tr>
+                                <td>year</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 年款ID</td>
+                            </tr>
+                            <tr>
+                                <td>carStyleId</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 车型ID</td>
+                            </tr>
+                </table>
+                <br/>
+
+
+        <pre>
+Result&lt;Pagination&lt;CarColorVo&gt;&gt; findCarColorPageList(CarColorListQueryParameter params, Pagination pagination, String sessionid);
+        </pre>
+                <h4 id="CarColorListQueryParameter">入参 CarColorListQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>colorName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 颜色名称</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 是否生效</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarColorVo">出参 CarColorVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>colorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色名称</td>
+                </tr>
+                <tr>
+                    <td>colorValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色值(#FFFFFF)</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>colorImgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 色块图片</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarColorVo&gt;&gt; findCarColorList(CarColorListQueryParameter params, String sessionid);
+        </pre>
+                <h4 id="CarColorListQueryParameter">入参 CarColorListQueryParameter</h4>
+                <table>
+                    <tr>
+                        <th>字段</th>
+                        <th>类型</th>
+                        <th>必传</th>
+                        <th>默认</th>
+                        <th>注释</th>
+                    </tr>
+                            <tr>
+                                <td>colorName</td>
+                                <td>String</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 颜色名称</td>
+                            </tr>
+                            <tr>
+                                <td>isActive</td>
+                                <td>Integer</td>
+                                <td>
+                                </td>
+                                <td></td>
+                                <td> 是否生效</td>
+                            </tr>
+                </table>
+                <br/>
+
+        <h4 id="CarColorVo">出参 CarColorVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>colorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色名称</td>
+                </tr>
+                <tr>
+                    <td>colorValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色值(#FFFFFF)</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>colorImgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 色块图片</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarColorVo&gt;&gt; findCarColorListByIds(List&lt;Integer&gt; ids, String sessionid);
+        </pre>
+
+        <h4 id="CarColorVo">出参 CarColorVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>colorName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色名称</td>
+                </tr>
+                <tr>
+                    <td>colorValue</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 颜色值(#FFFFFF)</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 是否有效</td>
+                </tr>
+                <tr>
+                    <td>colorImgUrl</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 色块图片</td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;CarColor&gt; getCarColorById(Integer id, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Integer&gt; addCarColor(CarColor carColor, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; updateCarColor(CarColor carColor, String sessionid);
+        </pre>
+
+
+        <pre>
+Result&lt;Boolean&gt; deleteCarColorById(Integer id, String sessionid);
+        </pre>
+
+
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            color: #333333;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaaaaa;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <ul>
+            <li><a href="#findCarSerialListByBrandId">没注释方法</a></li>
+            <li><a href="#searchCarSerialList">没注释方法</a></li>
+            <li><a href="#findCarSerialList">C端条件查询车系信息</a></li>
+            <li><a href="#getCarSerialListByProducterId"> 根据经销商id查询所有车系 producterId如果不传查询当前库所有车系</a></li>
+    </ul>
+
+        <pre>
+Result&lt;List&lt;CarSerialVo&gt;&gt; findCarSerialListByBrandId(Integer brandId, String sessionid);
+        </pre>
+
+        <h4 id="CarSerialVo">出参 CarSerialVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>brandId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名</td>
+                </tr>
+                <tr>
+                    <td>brandShowName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌显示名</td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系名称</td>
+                </tr>
+                <tr>
+                    <td>serialEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>levelId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别名称</td>
+                </tr>
+                <tr>
+                    <td>whitePic</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 白底图</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>serialDescr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系描述</td>
+                </tr>
+                <tr>
+                    <td>referPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 最低指导价</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>saleStatus</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 销售状态(1.在销2.停销3.待销)</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;Pagination&lt;CarSerial&gt;&gt; searchCarSerialList(int carlevel, String name, Pagination pagination, String sessionId);
+        </pre>
+
+
+        <pre>
+Result&lt;List&lt;CarSerialVo&gt;&gt; findCarSerialList(CarSerialQueryParameter2c queryParameter, String sessionid);
+        </pre>
+
+        <h4 id="CarSerialVo">出参 CarSerialVo</h4>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>类型</th>
+                <th>空</th>
+                <th>默认</th>
+                <th>注释</th>
+            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>brandId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌ID</td>
+                </tr>
+                <tr>
+                    <td>brandName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌名</td>
+                </tr>
+                <tr>
+                    <td>brandShowName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 品牌显示名</td>
+                </tr>
+                <tr>
+                    <td>serialName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系名称</td>
+                </tr>
+                <tr>
+                    <td>serialEname</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 英文名称</td>
+                </tr>
+                <tr>
+                    <td>showName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 显示名称</td>
+                </tr>
+                <tr>
+                    <td>allSpell</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 全拼</td>
+                </tr>
+                <tr>
+                    <td>levelId</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>levelName</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 级别名称</td>
+                </tr>
+                <tr>
+                    <td>whitePic</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 白底图</td>
+                </tr>
+                <tr>
+                    <td>sort</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 排序</td>
+                </tr>
+                <tr>
+                    <td>serialDescr</td>
+                    <td>String</td>
+                    <td></td>
+                    <td></td>
+                    <td> 车系描述</td>
+                </tr>
+                <tr>
+                    <td>referPrice</td>
+                    <td>BigDecimal</td>
+                    <td></td>
+                    <td></td>
+                    <td> 最低指导价</td>
+                </tr>
+                <tr>
+                    <td>isActive</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>createTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 创建时间</td>
+                </tr>
+                <tr>
+                    <td>updateTime</td>
+                    <td>Date</td>
+                    <td></td>
+                    <td></td>
+                    <td> 修改时间</td>
+                </tr>
+                <tr>
+                    <td>saleStatus</td>
+                    <td>Integer</td>
+                    <td></td>
+                    <td></td>
+                    <td> 销售状态(1.在销2.停销3.待销)</td>
+                </tr>
+        </table>
+        <br/>
+
+        <pre>
+Result&lt;List&lt;CarSerial&gt;&gt; getCarSerialListByProducterId(Integer producterId, String sessionId);
+        </pre>
+
+
+</body>
+
+</html>
