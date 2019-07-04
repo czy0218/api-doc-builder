@@ -26,23 +26,33 @@
 
 <body>
 <ul>
-        <li><a href="#JylCarBaseinfo">JylCarBaseinfo</a></li>
-        <li><a href="#JylCarDownPayment">JylCarDownPayment</a></li>
-        <li><a href="#JylCarExtend">JylCarExtend</a></li>
-        <li><a href="#JylCarPurchaser">JylCarPurchaser</a></li>
-        <li><a href="#JylPurchaseOrder">JylPurchaseOrder</a></li>
-        <li><a href="#JylPurchaseOrderAcceptance">JylPurchaseOrderAcceptance</a></li>
-        <li><a href="#JylPurchaseOrderPayment">JylPurchaseOrderPayment</a></li>
-        <li><a href="#JylPurchaseOrderPaymentVoucher">JylPurchaseOrderPaymentVoucher</a></li>
-        <li><a href="#JylSalesOrder">JylSalesOrder</a></li>
-        <li><a href="#JylSalesOrderAcceptance">JylSalesOrderAcceptance</a></li>
-        <li><a href="#JylSalesOrderAttachment">JylSalesOrderAttachment</a></li>
-        <li><a href="#JylSalesOrderChange">JylSalesOrderChange</a></li>
-        <li><a href="#JylSalesOrderPay">JylSalesOrderPay</a></li>
-        <li><a href="#PaymentVoucherDto">PaymentVoucherDto</a></li>
+        <li><a href="#ExpenditureDto">ExpenditureDto</a></li>
+        <li><a href="#TgtChannleKeyword">TgtChannleKeyword</a></li>
+        <li><a href="#TgtChannleSemCity">TgtChannleSemCity</a></li>
+        <li><a href="#TgtCityLevel">TgtCityLevel</a></li>
+        <li><a href="#TgtCityLevelExtend">TgtCityLevelExtend</a></li>
+        <li><a href="#TgtCityLevelProduct">TgtCityLevelProduct</a></li>
+        <li><a href="#TgtCustomDistributionMode">TgtCustomDistributionMode</a></li>
+        <li><a href="#TgtDealerCapitalAccount">TgtDealerCapitalAccount</a></li>
+        <li><a href="#TgtDealerCapitalAccountRecord">TgtDealerCapitalAccountRecord</a></li>
+        <li><a href="#TgtDealerChannleCost">TgtDealerChannleCost</a></li>
+        <li><a href="#TgtDealerContract">TgtDealerContract</a></li>
+        <li><a href="#TgtDealerContractUrl">TgtDealerContractUrl</a></li>
+        <li><a href="#TgtDealerMaterial">TgtDealerMaterial</a></li>
+        <li><a href="#TgtDealerMaterialActContent">TgtDealerMaterialActContent</a></li>
+        <li><a href="#TgtDealerMaterialCarstyle">TgtDealerMaterialCarstyle</a></li>
+        <li><a href="#TgtDealerMaterialPicture">TgtDealerMaterialPicture</a></li>
+        <li><a href="#TgtDealerMaterialSalesmen">TgtDealerMaterialSalesmen</a></li>
+        <li><a href="#TgtDealerSemMission">TgtDealerSemMission</a></li>
+        <li><a href="#TgtDealerSemMissionExtend">TgtDealerSemMissionExtend</a></li>
+        <li><a href="#TgtProductChannle">TgtProductChannle</a></li>
+        <li><a href="#TgtSemChannle">TgtSemChannle</a></li>
+        <li><a href="#TgtSemCity">TgtSemCity</a></li>
+        <li><a href="#TgtSemConfig">TgtSemConfig</a></li>
+        <li><a href="#TgtSemCustomKeyword">TgtSemCustomKeyword</a></li>
 </ul>
 
-    <h4 id="JylCarBaseinfo">JylCarBaseinfo</h4>
+    <h4 id="ExpenditureDto">ExpenditureDto</h4>
     <table>
         <tr>
             <th>字段</th>
@@ -56,28 +66,910 @@
                 <td>static final long</td>
                 <td></td>
                 <td></td>
-                <td> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>recordType</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>businessType</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>amountList</td>
+                <td>List&lt;ExpenditureAmount&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtChannleKeyword">TgtChannleKeyword</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>id</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 车辆id</td>
+                <td></td>
             </tr>
             <tr>
-                <td>coreBrandId</td>
+                <td>createUserid</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 主品牌ID</td>
+                <td></td>
             </tr>
             <tr>
-                <td>coreBrandName</td>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtChannleSemCity">TgtChannleSemCity</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtCityLevel">TgtCityLevel</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>level</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 城市级别</td>
+            </tr>
+            <tr>
+                <td>deleteFlag</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td> 是否已删除  1：已删除  0：未删除</td>
+            </tr>
+            <tr>
+                <td>createUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 更新人</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtCityLevelExtend">TgtCityLevelExtend</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>cityId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 城市ID</td>
+            </tr>
+            <tr>
+                <td>levelId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 级别ID</td>
+            </tr>
+            <tr>
+                <td>deleteFlag</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td> 是否已删除  1：已删除  0：未删除</td>
+            </tr>
+            <tr>
+                <td>createUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 更新人</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+            <tr>
+                <td>productType</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>subproductIdList</td>
+                <td>List&lt;TgtCityLevelProduct&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtCityLevelProduct">TgtCityLevelProduct</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>levelId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 推广通城市级别ID</td>
+            </tr>
+            <tr>
+                <td>subproductId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 子商品ID</td>
+            </tr>
+            <tr>
+                <td>deleteFlag</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td> 是否已删除  1：已删除  0：未删除</td>
+            </tr>
+            <tr>
+                <td>createUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateUser</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 更新人</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtCustomDistributionMode">TgtCustomDistributionMode</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 经销商ID</td>
+            </tr>
+            <tr>
+                <td>distributionMode</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 分配方式 1：自动分配 2：手动分配</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerCapitalAccount">TgtDealerCapitalAccount</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 经销商ID</td>
+            </tr>
+            <tr>
+                <td>totalRecharge</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 充值总额</td>
+            </tr>
+            <tr>
+                <td>remainingSum</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 余额</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+            <tr>
+                <td>amount</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>viceRemainingSum</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 余额  --副账户</td>
+            </tr>
+            <tr>
+                <td>businessType</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 业务类型 0:车销宝 1：金准通 2：试乘试驾</td>
+            </tr>
+            <tr>
+                <td>remainingSumTotal</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 总余额 remainingSum+viceRemainingSum</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerCapitalAccountRecord">TgtDealerCapitalAccountRecord</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 经销商ID</td>
+            </tr>
+            <tr>
+                <td>amount</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 金额</td>
+            </tr>
+            <tr>
+                <td>remainingSum</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 余额</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 类型：1-充值 2-退款 3-sem推广支出</td>
+            </tr>
+            <tr>
+                <td>busId</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 业务ID</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+            <tr>
+                <td>businessType</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 业务类型 0:车销宝 1：金准通 2：试乘试驾</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerChannleCost">TgtDealerChannleCost</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td>  表 : tgt_dealer_channle_cost 对应字段 : id</td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 经销商id 表 : tgt_dealer_channle_cost 对应字段 : dealer_id</td>
+            </tr>
+            <tr>
+                <td>channleId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 渠道id 表 : tgt_dealer_channle_cost 对应字段 : channle_id</td>
+            </tr>
+            <tr>
+                <td>dealerCost</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 花费 表 : tgt_dealer_channle_cost 对应字段 : dealer_cost</td>
+            </tr>
+            <tr>
+                <td>costTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 花费时间 表 : tgt_dealer_channle_cost 对应字段 : cost_time</td>
+            </tr>
+            <tr>
+                <td>realCost</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 真实花费 表 : tgt_dealer_channle_cost 对应字段 : real_cost</td>
+            </tr>
+            <tr>
+                <td>autoshowLaterCost</td>
+                <td>BigDecimal</td>
+                <td></td>
+                <td></td>
+                <td> 展后数据花费</td>
+            </tr>
+            <tr>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间 表 : tgt_dealer_channle_cost 对应字段 : update_time</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间 表 : tgt_dealer_channle_cost 对应字段 : create_dt</td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 创建人 表 : tgt_dealer_channle_cost 对应字段 : create_userid</td>
+            </tr>
+            <tr>
+                <td>updateUserId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 更新人 表 : tgt_dealer_channle_cost 对应字段 : update_user_id</td>
+            </tr>
+            <tr>
+                <td>deleteFlag</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 删除标志 0未删除 1 删除 表 : tgt_dealer_channle_cost 对应字段 : delete_flag</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerContract">TgtDealerContract</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>page</td>
+                <td>Pagination</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>dealerBrandList</td>
+                <td>List&lt;CsDealerExtend&gt;</td>
+                <td></td>
+                <td></td>
+                <td> 品牌列表</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerContractUrl">TgtDealerContractUrl</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerMaterial">TgtDealerMaterial</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>dealerId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 经销商ID</td>
+            </tr>
+            <tr>
+                <td>shortName</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 公司简称</td>
+            </tr>
+            <tr>
+                <td>dealerImg</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 店面图片路径</td>
+            </tr>
+            <tr>
+                <td>dealerImg_s</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 店面图片路径_小图</td>
+            </tr>
+            <tr>
+                <td>activityCb</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td> 是否显示促销活动0：否 1：是</td>
+            </tr>
+            <tr>
+                <td>activityTitle</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 活动标题</td>
+            </tr>
+            <tr>
+                <td>dealerDesc</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 店面介绍</td>
+            </tr>
+            <tr>
+                <td>createDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 创建时间</td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+            <tr>
+                <td>actContentList</td>
+                <td>List&lt;TgtDealerMaterialActContent&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>carstyleList</td>
+                <td>List&lt;TgtDealerMaterialCarstyle&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>salesmenList</td>
+                <td>List&lt;TgtDealerMaterialSalesmen&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tidbitList</td>
+                <td>List&lt;TgtDealerMaterialPicture&gt;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>dealerName</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
                 <td></td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>showInfo</td>
+                <td>Boolean</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerMaterialActContent">TgtDealerMaterialActContent</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>materialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 素材表ID</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 活动标题</td>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td> 活动内容</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerMaterialCarstyle">TgtDealerMaterialCarstyle</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>materialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 素材表ID</td>
             </tr>
             <tr>
                 <td>brandId</td>
@@ -94,25 +986,11 @@
                 <td> 品牌名称</td>
             </tr>
             <tr>
-                <td>initial</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 品牌首字母</td>
-            </tr>
-            <tr>
                 <td>styleId</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 意向车型</td>
-            </tr>
-            <tr>
-                <td>styleIds</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 意向车型串</td>
+                <td> 车型ID</td>
             </tr>
             <tr>
                 <td>styleName</td>
@@ -122,169 +1000,132 @@
                 <td> 车型名称</td>
             </tr>
             <tr>
-                <td>modelIds</td>
+                <td>spic</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
-                <td> 车款id串</td>
+                <td> 车型图片</td>
             </tr>
             <tr>
-                <td>modelId</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车款id</td>
-            </tr>
-            <tr>
-                <td>modelName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车款名称</td>
-            </tr>
-            <tr>
-                <td>car_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车商通车款id</td>
-            </tr>
-            <tr>
-                <td>carReferPrice</td>
+                <td>factoryPrice</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
                 <td> 厂商指导价</td>
             </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerMaterialPicture">TgtDealerMaterialPicture</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
             <tr>
-                <td>nakedCarPrice</td>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>materialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 素材表ID</td>
+            </tr>
+            <tr>
+                <td>url</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
-                <td> 裸车价</td>
+                <td> 图片地址</td>
             </tr>
             <tr>
-                <td>logisticsPrice</td>
+                <td>url_s</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
-                <td> 物流费</td>
+                <td> 图片地址_小图</td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerMaterialSalesmen">TgtDealerMaterialSalesmen</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td>logisticsTime</td>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>materialId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 素材表ID</td>
+            </tr>
+            <tr>
+                <td>salesmanId</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 销售di</td>
+            </tr>
+            <tr>
+                <td>salesmanName</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
-                <td> 物流周期</td>
+                <td> 销售名称</td>
             </tr>
+    </table>
+    <br/>
+    <h4 id="TgtDealerSemMission">TgtDealerSemMission</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
             <tr>
-                <td>purchasePrice</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购价</td>
-            </tr>
-            <tr>
-                <td>frontMoney</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 最低定金</td>
-            </tr>
-            <tr>
-                <td>carColors</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车身颜色</td>
-            </tr>
-            <tr>
-                <td>decorateColors</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 内饰颜色</td>
-            </tr>
-            <tr>
-                <td>locusCityIds</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车源所在地</td>
-            </tr>
-            <tr>
-                <td>locusCityList</td>
-                <td>List&lt;JylCarExtend&gt;</td>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>locusCityName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车源所在地名称</td>
-            </tr>
-            <tr>
-                <td>licensedDeposit</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 上牌押金</td>
-            </tr>
-            <tr>
-                <td>remark</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 备注信息</td>
-            </tr>
-            <tr>
-                <td>createDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 创建时间</td>
-            </tr>
-            <tr>
-                <td>releaseDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 发布时间</td>
-            </tr>
-            <tr>
-                <td>releaseNum</td>
-                <td>Long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>downDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 下架时间</td>
-            </tr>
-            <tr>
-                <td>downDtNum</td>
-                <td>Long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>updateDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 更新时间</td>
-            </tr>
-            <tr>
-                <td>updateDtStr</td>
-                <td>String</td>
+                <td>id</td>
+                <td>Integer</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -294,387 +1135,25 @@
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> </td>
+                <td></td>
             </tr>
             <tr>
                 <td>updateUserid</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>deleteFlag</td>
-                <td>Byte</td>
-                <td></td>
-                <td></td>
-                <td> 删除标志 0未删除 1 删除</td>
-            </tr>
-            <tr>
-                <td>status</td>
-                <td>Byte</td>
-                <td></td>
-                <td></td>
-                <td> 上架状态  0：下架  1：上架</td>
-            </tr>
-            <tr>
-                <td>statusName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>field1</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 扩展字段1</td>
-            </tr>
-            <tr>
-                <td>field2</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 扩展字段2</td>
-            </tr>
-            <tr>
-                <td>field3</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 扩展字段3</td>
-            </tr>
-            <tr>
-                <td>salesCityIds</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>salesCityList</td>
-                <td>List&lt;JylCarExtend&gt;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>salesCity</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 销售城市字符串</td>
-            </tr>
-            <tr>
-                <td>forbiddenCityIds</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>forbiddenCityList</td>
-                <td>List&lt;JylCarExtend&gt;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>forbiddenCity</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 禁售城市字符串</td>
-            </tr>
-            <tr>
-                <td>priceFloatType</td>
+                <td>isOverdue</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 价格浮动类型 1：价格无浮动（一口价） 2:：价格下浮钱数  3：价格下浮点数  4：价格上浮钱数  5：价格上浮点数</td>
-            </tr>
-            <tr>
-                <td>priceFloatText</td>
-                <td>String</td>
                 <td></td>
-                <td></td>
-                <td> 价格浮动详情</td>
-            </tr>
-            <tr>
-                <td>supplierId</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 供应商id</td>
-            </tr>
-            <tr>
-                <td>supplierName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 供应商名称</td>
-            </tr>
-            <tr>
-                <td>purchaserName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购员名称</td>
-            </tr>
-            <tr>
-                <td>carProcedure</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车辆手续 0：随车 3:3天内   5:5天内  7:7天内 15:15天内 30:30天内</td>
-            </tr>
-            <tr>
-                <td>carValidDay</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车源有效期（天）</td>
-            </tr>
-            <tr>
-                <td>carValidTime</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>carValidTimeNum</td>
-                <td>Long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>dateStatus</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 到期上架状态  0：下架  1：上架</td>
-            </tr>
-            <tr>
-                <td>sortStatus</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 排序状态  0：下架  1：上架</td>
             </tr>
     </table>
     <br/>
-    <h4 id="JylCarDownPayment">JylCarDownPayment</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td> jyl_car_down_payment</td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>nakedCarPrice</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 裸车价（万）</td>
-            </tr>
-            <tr>
-                <td>downPayment</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 定金</td>
-            </tr>
-            <tr>
-                <td>createDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 创建时间</td>
-            </tr>
-            <tr>
-                <td>createUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 创建人</td>
-            </tr>
-            <tr>
-                <td>updateDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 更新时间</td>
-            </tr>
-            <tr>
-                <td>updateUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 更新人</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylCarExtend">JylCarExtend</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>carBaseinfoId</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车辆基本信息</td>
-            </tr>
-            <tr>
-                <td>extendType</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 扩展类型（1：销售区域城市ID  2:上牌地限制城市ID  3:车源所在地城市ID）</td>
-            </tr>
-            <tr>
-                <td>dataId</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 数据ID</td>
-            </tr>
-            <tr>
-                <td>dataName</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 数据名称</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylCarPurchaser">JylCarPurchaser</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 姓名</td>
-            </tr>
-            <tr>
-                <td>phone</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 电话</td>
-            </tr>
-            <tr>
-                <td>openid</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 微信openId</td>
-            </tr>
-            <tr>
-                <td>state</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 状态 1：启用 2：停用（封存）</td>
-            </tr>
-            <tr>
-                <td>createDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 创建时间</td>
-            </tr>
-            <tr>
-                <td>createUserId</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 创建人id</td>
-            </tr>
-            <tr>
-                <td>createUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 创建人名称</td>
-            </tr>
-            <tr>
-                <td>updateDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 更新时间</td>
-            </tr>
-            <tr>
-                <td>updateUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 更新人</td>
-            </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td> jyl_car_purchaser</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylPurchaseOrder">JylPurchaseOrder</h4>
+    <h4 id="TgtDealerSemMissionExtend">TgtDealerSemMissionExtend</h4>
     <table>
         <tr>
             <th>字段</th>
@@ -690,780 +1169,6 @@
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>order_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 订单编号</td>
-            </tr>
-            <tr>
-                <td>sales_order_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 销售订单号</td>
-            </tr>
-            <tr>
-                <td>dealer_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 经销商id</td>
-            </tr>
-            <tr>
-                <td>dealer_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 经销商名称</td>
-            </tr>
-            <tr>
-                <td>area_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车商通店铺id</td>
-            </tr>
-            <tr>
-                <td>status</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 订单状态：0.待付款 1.已付款 2.备货中 3.待验车 4.待付尾款  5.已完成  6.待退回 7.已取消</td>
-            </tr>
-            <tr>
-                <td>statusList</td>
-                <td>List&lt;Integer&gt;</td>
-                <td></td>
-                <td></td>
-                <td> 订单状态列表：0.待付款 1.已付款 2.备货中 3.待验车 4.待付尾款  5.已完成  6.待退回 7.已取消</td>
-            </tr>
-            <tr>
-                <td>statusStr</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>acceptance_status</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 验收状态：1通过，2未通过</td>
-            </tr>
-            <tr>
-                <td>acceptance_status_str</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 验收状态：1通过，2未通过</td>
-            </tr>
-            <tr>
-                <td>acceptance_explain</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 验收说明</td>
-            </tr>
-            <tr>
-                <td>brand_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 品牌ID</td>
-            </tr>
-            <tr>
-                <td>brand_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 品牌名称</td>
-            </tr>
-            <tr>
-                <td>style_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车型ID</td>
-            </tr>
-            <tr>
-                <td>style_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车型名称</td>
-            </tr>
-            <tr>
-                <td>model_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车款id</td>
-            </tr>
-            <tr>
-                <td>model_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车款名称</td>
-            </tr>
-            <tr>
-                <td>car_base_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车辆基本信息(在售车款)id</td>
-            </tr>
-            <tr>
-                <td>car_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 车商通车款id</td>
-            </tr>
-            <tr>
-                <td>body_color</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车身颜色</td>
-            </tr>
-            <tr>
-                <td>interior_color</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 内饰颜色</td>
-            </tr>
-            <tr>
-                <td>city_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 城市ID</td>
-            </tr>
-            <tr>
-                <td>city_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 城市名称</td>
-            </tr>
-            <tr>
-                <td>purchase_number</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 采购台数</td>
-            </tr>
-            <tr>
-                <td>accepter_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 接车人姓名</td>
-            </tr>
-            <tr>
-                <td>accepter_tel</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 接车人手机号</td>
-            </tr>
-            <tr>
-                <td>accepter_ID</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 接车人身份证号</td>
-            </tr>
-            <tr>
-                <td>expect_at</td>
-                <td>Long</td>
-                <td></td>
-                <td></td>
-                <td> 期望交车时间-数字型</td>
-            </tr>
-            <tr>
-                <td>delivery_time</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 期望交车时间-日期型</td>
-            </tr>
-            <tr>
-                <td>down_payment</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 定金（全款的为0）</td>
-            </tr>
-            <tr>
-                <td>nude_price</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 裸车价</td>
-            </tr>
-            <tr>
-                <td>transport_money</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 物流费</td>
-            </tr>
-            <tr>
-                <td>full_payment</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 全款金额/采购价</td>
-            </tr>
-            <tr>
-                <td>transport_cycle</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 物流周期（天）</td>
-            </tr>
-            <tr>
-                <td>payment_method</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 付款方式（1-定金，2-全款）</td>
-            </tr>
-            <tr>
-                <td>payment_method_str</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 付款方式（1-定金，2-全款）</td>
-            </tr>
-            <tr>
-                <td>vin_number</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> VIN码</td>
-            </tr>
-            <tr>
-                <td>remarks</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 备注</td>
-            </tr>
-            <tr>
-                <td>purchase_time</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 采购时间</td>
-            </tr>
-            <tr>
-                <td>purchase_time_str</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购时间-string</td>
-            </tr>
-            <tr>
-                <td>purchase_user</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购人</td>
-            </tr>
-            <tr>
-                <td>create_user</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 创建人</td>
-            </tr>
-            <tr>
-                <td>create_dt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 创建时间</td>
-            </tr>
-            <tr>
-                <td>update_dt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 更新时间</td>
-            </tr>
-            <tr>
-                <td>update_user</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 更新人</td>
-            </tr>
-            <tr>
-                <td>acceptanceImgs</td>
-                <td>List&lt;JylPurchaseOrderAcceptance&gt;</td>
-                <td></td>
-                <td></td>
-                <td> 验收图片列表</td>
-            </tr>
-            <tr>
-                <td>paymentVoucher</td>
-                <td>PaymentVoucherDto</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>paymentList</td>
-                <td>List&lt;JylPurchaseOrderPayment&gt;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>data_sources</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>customer_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 客户姓名</td>
-            </tr>
-            <tr>
-                <td>purchaser_name</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 车辆采购员姓名</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylPurchaseOrderAcceptance">JylPurchaseOrderAcceptance</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>purchase_order_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购订单号</td>
-            </tr>
-            <tr>
-                <td>img_url</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 验收图片地址</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylPurchaseOrderPayment">JylPurchaseOrderPayment</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>purchase_order_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购订单编号</td>
-            </tr>
-            <tr>
-                <td>payment_type</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 回款类型 1：认定金 2：认尾款 3：认全款</td>
-            </tr>
-            <tr>
-                <td>payment_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 回款序号</td>
-            </tr>
-            <tr>
-                <td>payment_time</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 回款日期</td>
-            </tr>
-            <tr>
-                <td>payment_user</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 汇款人</td>
-            </tr>
-            <tr>
-                <td>payment_amount</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 回款金额</td>
-            </tr>
-            <tr>
-                <td>trading_code</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 银行交易流水号</td>
-            </tr>
-            <tr>
-                <td>receivables</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 收款账户/回款主体</td>
-            </tr>
-            <tr>
-                <td>delete_flag</td>
-                <td>Boolean</td>
-                <td></td>
-                <td></td>
-                <td> 是否已删除  1：已删除  0：未删除</td>
-            </tr>
-            <tr>
-                <td>recognition_time</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 财务认款时间</td>
-            </tr>
-            <tr>
-                <td>recognition_user</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 认款人</td>
-            </tr>
-            <tr>
-                <td>create_user</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 创建人</td>
-            </tr>
-            <tr>
-                <td>create_dt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 创建时间</td>
-            </tr>
-            <tr>
-                <td>update_user</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 更新人</td>
-            </tr>
-            <tr>
-                <td>update_dt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 更新时间</td>
-            </tr>
-            <tr>
-                <td>voucherList</td>
-                <td>List&lt;JylPurchaseOrderPaymentVoucher&gt;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylPurchaseOrderPaymentVoucher">JylPurchaseOrderPaymentVoucher</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>payment_id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> 交易链-采购订单-回款表ID</td>
-            </tr>
-            <tr>
-                <td>voucher_img</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 凭证图片地址</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylSalesOrder">JylSalesOrder</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>customerPhoneDesen</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 脱敏客户手机号</td>
-            </tr>
-            <tr>
-                <td>page</td>
-                <td>Pagination</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylSalesOrderAcceptance">JylSalesOrderAcceptance</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>sales_order_no</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 采购订单号</td>
-            </tr>
-            <tr>
-                <td>img_url</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 验收图片地址</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylSalesOrderAttachment">JylSalesOrderAttachment</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> id</td>
-            </tr>
-            <tr>
-                <td>salesOrderNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 销售订单号</td>
-            </tr>
-            <tr>
-                <td>imgPath</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 附件图片地址</td>
-            </tr>
-            <tr>
-                <td>createDt</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 上传时间</td>
-            </tr>
-            <tr>
-                <td>createUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 上传人</td>
-            </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td> jyl_sales_order_attachment</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylSalesOrderChange">JylSalesOrderChange</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
-            <tr>
-                <td>id</td>
-                <td>Integer</td>
-                <td></td>
-                <td></td>
-                <td> id</td>
-            </tr>
-            <tr>
-                <td>salesOrderNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 销售订单号</td>
-            </tr>
-            <tr>
-                <td>changeUser</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 修改人</td>
-            </tr>
-            <tr>
-                <td>changeTime</td>
-                <td>Date</td>
-                <td></td>
-                <td></td>
-                <td> 修改时间</td>
-            </tr>
-            <tr>
-                <td>beforeChange</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 修改前金额</td>
-            </tr>
-            <tr>
-                <td>afterChange</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 修改后金额</td>
-            </tr>
-            <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
-                <td></td>
-                <td></td>
-                <td> jyl_sales_order_change</td>
-            </tr>
-    </table>
-    <br/>
-    <h4 id="JylSalesOrderPay">JylSalesOrderPay</h4>
-    <table>
-        <tr>
-            <th>字段</th>
-            <th>类型</th>
-            <th>空</th>
-            <th>默认</th>
-            <th>注释</th>
-        </tr>
             <tr>
                 <td>id</td>
                 <td>Integer</td>
@@ -1476,95 +1181,67 @@
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 经销商ID</td>
+                <td> 经销商id</td>
             </tr>
             <tr>
-                <td>salesOrderNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 销售订单号</td>
-            </tr>
-            <tr>
-                <td>merchOrderNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 支付流水号</td>
-            </tr>
-            <tr>
-                <td>payWay</td>
+                <td>extendType</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 支付方式</td>
+                <td> 拓展类型 1：品牌报名分配状态（data_id 1：是 0：否）</td>
             </tr>
             <tr>
-                <td>amount</td>
-                <td>BigDecimal</td>
-                <td></td>
-                <td></td>
-                <td> 支付金额</td>
-            </tr>
-            <tr>
-                <td>posSysClientNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> POS机编号</td>
-            </tr>
-            <tr>
-                <td>tradeNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 企账通交易单号</td>
-            </tr>
-            <tr>
-                <td>tradeStatus</td>
+                <td>brandId</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 交易状态</td>
+                <td> 品牌id</td>
             </tr>
             <tr>
-                <td>tradeTime</td>
-                <td>Date</td>
+                <td>dataId</td>
+                <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 交易时间</td>
-            </tr>
-            <tr>
-                <td>bankCardNo</td>
-                <td>String</td>
-                <td></td>
-                <td></td>
-                <td> 银行卡号</td>
+                <td> 拓展内容</td>
             </tr>
             <tr>
                 <td>createDt</td>
                 <td>Date</td>
                 <td></td>
                 <td></td>
-                <td> 提交时间</td>
+                <td> 创建时间</td>
             </tr>
             <tr>
-                <td>tradeNoticeId</td>
+                <td>updateTime</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td> 更新时间</td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
                 <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> 到账通知ID</td>
+                <td> 创建人id</td>
             </tr>
             <tr>
-                <td>serialVersionUID</td>
-                <td>static final long</td>
+                <td>updateUserid</td>
+                <td>Integer</td>
                 <td></td>
                 <td></td>
-                <td> jyl_sales_order_pay</td>
+                <td> 修改人id</td>
+            </tr>
+            <tr>
+                <td>deleteFlag</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td> 删除标志 0未删除 1 删除</td>
             </tr>
     </table>
     <br/>
-    <h4 id="PaymentVoucherDto">PaymentVoucherDto</h4>
+    <h4 id="TgtProductChannle">TgtProductChannle</h4>
     <table>
         <tr>
             <th>字段</th>
@@ -1581,18 +1258,216 @@
                 <td></td>
             </tr>
             <tr>
-                <td>trading_code</td>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>channleName</td>
                 <td>String</td>
                 <td></td>
                 <td></td>
-                <td> 银行交易流水号</td>
+                <td></td>
             </tr>
             <tr>
-                <td>voucher_img</td>
-                <td>List&lt;String&gt;</td>
+                <td>createDt</td>
+                <td>Date</td>
                 <td></td>
                 <td></td>
-                <td> 凭证图片地址</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateDt</td>
+                <td>Date</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>logo</td>
+                <td>String</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtSemChannle">TgtSemChannle</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtSemCity">TgtSemCity</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtSemConfig">TgtSemConfig</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    <br/>
+    <h4 id="TgtSemCustomKeyword">TgtSemCustomKeyword</h4>
+    <table>
+        <tr>
+            <th>字段</th>
+            <th>类型</th>
+            <th>空</th>
+            <th>默认</th>
+            <th>注释</th>
+        </tr>
+            <tr>
+                <td>serialVersionUID</td>
+                <td>static final long</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>createUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updateUserid</td>
+                <td>Integer</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
     </table>
     <br/>
